@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registro</title>
     <link rel="stylesheet" href="../styles/styles.css">
 </head>
+
 <body>
-       <header>
+
+    <header>
         <div class="logo-container">
             <a href="../index.html">
                 <img src="images/logo.png" alt="Logo Vitalis" class="logo">
@@ -15,43 +18,159 @@
             </a>
         </div>
         <nav class="main-nav">
-           
             <a href="../pages/CT.html" class="nav-button">Colonia Tirolesa</a>
             <a href="../pages/VCP.html" class="nav-button">Villa Carlos Paz</a>
         </nav>
         <div class="auth-container">
             <a href="#" class="login-button">Acceder</a>
-            <a href="../pages/perfil.html" class="register-button">perfil</a>
+            <a href="../pages/perfil.html" class="perfil-button">
+                <img src="../assets/usuario (1).png" alt="perfil" class="perfil-icon">
+            </a>
         </div>
     </header>
 
-     <main>
-    <h1>Registro de Usuario</h1>
-    <form action="registro.php" method="post">
-        <label for="nombre">Nombre:</label>
-        <input type="text" id="nombre" name="nombre" required>
+    <main>
+        <h1>REGISTRARSE</h1>
 
-        <label for="apellido">Apellido:</label>
-        <input type="text" id="apellido" name="apellido" required>
+        <div>
+            <h2>INICIAR SESION</h2>
+            <form action="login.php" method="post">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
 
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
+                <label for="password">Contraseña:</label>
+                <input type="password" id="password" name="password" required>
 
-        <label for="password">Contraseña:</label>
-        <input type="password" id="password" name="password" required>
+                <button type="submit">Iniciar Sesión</button>
+            </form>
+        </div>
 
-        <button type="submit">Registrarse</button>
+        <div>
+            <h2>CREAR PERFIL</h2>
 
+            <form action="registro.php" method="post">
+                <div>
+                    <label for="email_registro">Email:</label>
+                    <input type="email" id="email_registro" name="email_registro" required>
+
+                    <label for="password_registro">Contraseña:</label>
+                    <input type="password" id="password_registro" name="password_registro" required>
+
+                    <label for="confirm_password">Confirmar Contraseña:</label>
+                    <input type="password" id="confirm_password" name="confirm_password" required>
+                </div>
+
+                <div>
+                    <label for="obra_social">Obra Social:</label>
+                    <input type="text" id="obra_social" name="obra_social" required>
+
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+
+                    <label for="apellido">Apellido:</label>
+                    <input type="text" id="apellido" name="apellido" required>
+
+                    <label for="dni">DNI:</label>
+                    <input type="text" id="dni" name="dni" required>
+
+                    <label for="telefono">Teléfono:</label>
+                    <input type="tel" id="telefono" name="telefono" required>
+
+                    <label for="fecha_nacimiento">Fecha de Nacimiento:</label>
+                    <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required>
+
+                    <label for="domicilio">Domicilio:</label>
+                    <input type="text" id="domicilio" name="domicilio" required>
+
+                    <label for="ciudad">Ciudad:</label>
+                    <input type="text" id="ciudad" name="ciudad" required>
+
+                    <label for="provincia">Provincia:</label>
+                    <input type="text" id="provincia" name="provincia" required>
+
+                    <label for="estado_civil">Estado Civil:</label>
+                    <select id="estado_civil" name="estado_civil" required>
+                        <option value="soltero">Soltero</option>
+                        <option value="casado">Casado</option>
+                        <option value="divorciado">Divorciado</option>
+                        <option value="viudo">Viudo</option>
+                        <option value="otro">Otro</option>
+                    </select>
+
+                    <label for="ocupacion">Ocupación:</label>
+                    <input type="text" id="ocupacion" name="ocupacion" required>
+                </div>
+
+                <div>
+                    <h2>Antecedentes</h2>
+                    <h5>alergias</h5>
+                    <label for="penicilina">penicilina</label>
+                    <input type="checkbox" id="penicilina" name="alergias[]" value="penicilina">
+                    <label for="yodo">yodo</label>
+                    <input type="checkbox" id="yodo" name="alergias[]" value="yodo">
+                    <label for="anestesia">anestesia</label>
+                    <input type="checkbox" id="anestesia" name="alergias[]" value="anestesia">
+                    <label for="acrilicos">acrilicos</label>
+                    <input type="checkbox" id="acrilicos" name="alergias[]" value="acrilicos">
+
+                    <h5>P.S.A</h5>
+                    <label for="B">B</label>
+                    <input type="checkbox" id="B" name="psa[]" value="B">
+                    <label for="N">N</label>
+                    <input type="checkbox" id="N" name="psa[]" value="N">
+                    <label for="A">A</label>
+                    <input type="checkbox" id="A" name="psa[]" value="A">
+
+                    <h5>Condicion Medica</h5>
+                    <label for="Diabetes">Diabetes</label>
+                    <input type="checkbox" id="diabetes" name="enfermedades[]" value="diabetes">
+                    <label for="Chagas">Chagas</label>
+                    <input type="checkbox" id="chagas" name="enfermedades[]" value="chagas">
+                    <label for="Epilepsia">Epilepsia</label>
+                    <input type="checkbox" id="epilepsia" name="enfermedades[]" value="epilepsia">
+                    <label for="Hepatitis">Hepatitis</label>
+                    <input type="checkbox" id="hepatitis" name="enfermedades[]" value="epatitis">
+                    <label for="Artritis">Artritis</label>
+                    <input type="checkbox" id="artritis" name="enfermedades[]" value="artritis">
+                    <label for="Fiebre_reumatica">Fiebre reumática</label>
+                    <input type="checkbox" id="fiebre_reumatica" name="enfermedades[]" value="fiebre_reumatica">
+                    <label for="Hipertiroidismo">Hipertiroidismo</label>
+                    <input type="checkbox" id="hipertiroidismo" name="enfermedades[]" value="hipertiroidismo">
+                    <label for="Hemofilia">Hemofilia</label>
+                    <input type="checkbox" id="hemofilia" name="enfermedades[]" value="hemofilia">
+                    <label for="Embaraso">Embaraso</label>
+                    <input type="checkbox" id="embaraso" name="enfermedades[]" value="embaraso">
+                    <label for="Lactancia">Lactancia</label>
+                    <input type="checkbox" id="lactancia" name="enfermedades[]" value="lactancia">
+                    <label for="Anticoncep.">Anticoncep.</label>
+                    <input type="checkbox" id="anticoncep" name="enfermedades[]" value="anticoncep">
+                    <label for="tbc">T.B.C</label>
+                    <input type="checkbox" id="tbc" name="enfermedades[]" value="tbc">
+                    <label for="Anticuabulantes">Anticuabulantes</label>
+                    <input type="checkbox" id="anticuabulantes" name="enfermedades[]" value="anticuabulantes">
+                    <label for="Enfermedad_cardiaca">Enfermedad cardíaca</label>
+                    <input type="checkbox" id="enfermedad_cardiaca" name="enfermedades[]" value="enfermedad_cardiaca">
+                    <label for="Enfermedad_renal">Enfermedad renal</label>
+                    <input type="checkbox" id="enfermedad_renal" name="enfermedades[]" value="enfermedad_renal">
+                    <label for="Enfermedad_infecciosas">Enfermedad infecciosas</label>
+                    <input type="checkbox" id="enfermedad_infecciosas" name="enfermedades[]"
+                        value="enfermedad_infecciosas">
+
+                </div>
+
+                <button type="submit">Registrarse</button>
+        </div>
+        </form>
 
     </main>
 
-    <footer>
+    <footer class="footer_acceso">
         <div class="footer-contenedor">
             <p>&copy; 2025 Vitalis. Todos los derechos reservados.</p>
             <p>Desarrollado por [Ignacio Rodriguez]</p>
         </div>
     </footer>
-</body>
-</html>
 
-./
+</body>
+
+</html>
