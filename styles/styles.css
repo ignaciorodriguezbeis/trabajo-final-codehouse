@@ -15,7 +15,16 @@ header {
     top: 0;
     z-index: 1000;
 }
-
+footer {
+    background-color: rgb(44, 62, 80);;
+    padding: 1rem 2rem;
+    text-align: center;
+    box-shadow: 0 -2px 5px rgb(255, 255, 255);
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    color: white;
+}
 .logo-container a {
     display: flex;
     align-items: center;
@@ -62,14 +71,4 @@ header {
 
 .login-button:hover {
     background-color: #2980b9;
-}
-footer {
-    background-color: rgb(44, 62, 80);;
-    padding: 1rem 2rem;
-    text-align: center;
-    box-shadow: 0 -2px 5px rgb(255, 255, 255);
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-    color: white;
 }
