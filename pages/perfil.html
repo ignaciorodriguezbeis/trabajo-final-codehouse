@@ -29,10 +29,187 @@
     </header>
 
     <main>
-        <h1>Perfil de Usuario</h1>
-        <p>Bienvenido, [Nombre del Usuario]. Aquí puedes ver y editar tu información personal.</p>
+        <div class="perfil-container">
+            <!-- información personal del paciente -->
+            <div class="perfil-section">
+                <div class="card">
+                    <div class="card-header">
+                        <div class="profile-photo">
+                            <img src="/placeholder.svg?height=128&width=128" alt="Foto de perfil" class="paciente-img">
+                        </div>
+                        <h1 class="nombre-paciente">Juan Pérez García</h1>
+                        <p class="paciente-id">Paciente #12345</p>
+                    </div>
+                    <div class="info-conteiner">
+                        <div class="info-edad">
+                            <span class="info-label">Edad:</span>
+                            <span>35 años</span>
+                        </div>
+                        <div class="info-paciente">
+                            <span class="info-label">Teléfono:</span>
+                            <span>+34 612 345 678</span>
+                        </div>
+                        <div class="info-paciente">
+                            <span class="info-label">Email:</span>
+                            <span>juan.perez@email.com</span>
+                        </div>
+                        <div class="info-paciente">
+                            <span class="info-label">Última visita:</span>
+                            <span>15/05/2025</span>
+                        </div>
+                        <div class="info-paciente">
+                            <span class="info-label">Próxima cita:</span>
+                            <span class="next-appointment">20/06/2025</span>
+                        </div>
+                    </div>
+                    <div class="info-footer">
+                        <button class="edit-button">Editar Perfil</button>
+                    </div>
+                </div>
 
+            </div>
+            <div class="perfil-main-section">
+                <!-- informacion medica -->
 
+                <div class="card">
+                    <div class="card-content">
+                        <div class="info-medica">
+                            <div class="info-section">
+                                <h3>ANTECEDENTES:</h3>
+                                <div class="checkbox-info">
+                                    <label><input type="checkbox" checked> Diabetes</label>
+                                    <label><input type="checkbox"> Chagas</label>
+                                    <label><input type="checkbox"> Epilepsia</label>
+                                    <label><input type="checkbox"> Epatitis</label>
+                                    <label><input type="checkbox"> Artritis</label>
+                                    <label><input type="checkbox">Fiebre Reumatica</label>
+                                    <label><input type="checkbox"> Hipertiroidismo</label>
+                                    <label><input type="checkbox"> Hemofilia</label>
+                                    <label><input type="checkbox"> Embarazo</label>
+                                    <label><input type="checkbox"> Lactancia</label>
+                                    <label><input type="checkbox"> Anticonceptivos</label>
+                                    <label><input type="checkbox"> T.B.C</label>
+                                    <label><input type="checkbox"> Anticuagulantes</label>
+                                    <label><input type="checkbox"> Enfermedad cardíaca</label>
+                                    <label><input type="checkbox"> Enfermedad renal</label>
+                                    <label><input type="checkbox"> Enfermedad infecciosa</label>
+
+                                </div>
+                            </div>
+                            <div class="info-section">
+                                <h3>ALERGIAS:</h3>
+                                <div class="checkbox-info">
+                                    <label><input type="checkbox" checked> Penicilina</label>
+                                    <label><input type="checkbox" checked> Yodo</label>
+                                    <label><input type="checkbox"> Anestesia</label>
+                                    <label><input type="checkbox"> Acrílicos</label>
+                                </div>
+                            </div>
+                            <div class="info-section">
+                                <h3>P.S.A:</h3>
+                                <div class="checkbox-info">
+                                    <label><input type="checkbox" checked> B</label>
+                                    <label><input type="checkbox"> N</label>
+                                    <label><input type="checkbox"> A</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tratamientos -->
+
+                <div class="card">
+                    <div class="card-header">
+                        <h2 class="card-title">Plan de Tratamiento</h2>
+                        <p class="card-description">Tratamientos actuales y programados</p>
+                    </div>
+                    <div class="card-content">
+                        <div class="treatment-item">
+                            <div class="treatment-header">
+                                <h3>Endodoncia - Pieza 26</h3>
+                                <span class="badge badge-warning">En progreso</span>
+                            </div>
+                            <p class="treatment-description">Tratamiento de conducto en molar superior
+                                izquierdo.</p>
+                            <div class="treatment-date">
+                                <span>📅 Iniciado: 15/05/2025</span>
+                            </div>
+                        </div>
+
+                        <div class="treatment-item">
+                            <div class="treatment-header">
+                                <h3>Corona - Pieza 26</h3>
+                                <span class="badge badge-outline">Programado</span>
+                            </div>
+                            <p class="treatment-description">Colocación de corona de porcelana tras finalizar
+                                endodoncia.</p>
+                            <div class="treatment-date">
+                                <span>📅 Programado: 20/06/2025</span>
+                            </div>
+                        </div>
+
+                        <div class="treatment-item">
+                            <div class="treatment-header">
+                                <h3>Limpieza dental</h3>
+                                <span class="badge badge-outline">Programado</span>
+                            </div>
+                            <p class="treatment-description">Limpieza dental profesional y revisión general.</p>
+                            <div class="treatment-date">
+                                <span>📅 Programado: 20/09/2025</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- historial -->
+
+                <div class="card">
+                    <div class="card-header">
+                        <h2 class="card-title">Historial de Tratamientos</h2>
+                        <p class="card-description">Registro de tratamientos completados</p>
+                    </div>
+                    <div class="card-content">
+                        <div class="treatment-item">
+                            <div class="treatment-header">
+                                <h3>Extracción - Pieza 18</h3>
+                                <span class="badge badge-secondary">Completado</span>
+                            </div>
+                            <p class="treatment-description">Extracción de muela del juicio superior derecha.
+                            </p>
+                            <div class="treatment-date">
+                                <span>✅ Completado: 10/01/2025</span>
+                            </div>
+                        </div>
+
+                        <div class="treatment-item">
+                            <div class="treatment-header">
+                                <h3>Empaste - Pieza 36</h3>
+                                <span class="badge badge-secondary">Completado</span>
+                            </div>
+                            <p class="treatment-description">Empaste de composite en molar inferior izquierdo.
+                            </p>
+                            <div class="treatment-date">
+                                <span>✅ Completado: 05/12/2024</span>
+                            </div>
+                        </div>
+
+                        <div class="treatment-item">
+                            <div class="treatment-header">
+                                <h3>Limpieza dental</h3>
+                                <span class="badge badge-secondary">Completado</span>
+                            </div>
+                            <p class="treatment-description">Limpieza dental profesional y aplicación de flúor.
+                            </p>
+                            <div class="treatment-date">
+                                <span>✅ Completado: 15/06/2024</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
     </main>
 
     <footer>
