@@ -83,7 +83,7 @@ body {
     align-items: center;
     gap: 0.75rem;
 }
-
+   /* me arte de treatar de centrar el boton asi que se queda asi asta la proxima */
 .access-button {
     background: rgba(255, 255, 255, 0.1);
     color: white;
@@ -101,9 +101,9 @@ body {
 }
 
 .user-icon {
-    height: 2rem;
-    width: 2rem;
-    color: #a5f3fc;
+    height: 4rem;
+    width: 3rem;
+    padding: 18px 0 0 0;
 }
 
 
