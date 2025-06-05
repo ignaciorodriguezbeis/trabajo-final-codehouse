@@ -33,20 +33,15 @@
         </div>
     </header>
 
-    <main>
-
-
+      <main>
         <div class="login-form">
-
-            <!-- inicio de sesion -->
-
-            <h2>INICIAR SESION</h2>
-            <form action="./perfil.html" method="post">
+            <h2>INICIAR SESIÓN</h2>
+            <form action="#" method="post">
                 <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
+                <input type="email" id="email" name="email" required placeholder="tu@email.com">
 
                 <label for="password">Contraseña:</label>
-                <input type="password" id="password" name="password" required>
+                <input type="password" id="password" name="password" required placeholder="••••••••">
 
                 <button type="submit">Iniciar Sesión</button>
             </form>
@@ -55,148 +50,249 @@
         <div class="register-container">
             <h1>REGISTRARSE</h1>
 
-            <form action="registro.php" method="post" >
+            <form action="#" method="post">
                 <div class="registration-login">
+                    <div class="form-group">
+                        <label for="email_registro">Email:</label>
+                        <input type="email" id="email_registro" name="email_registro" required placeholder="tu@email.com">
+                    </div>
 
-                    <!-- formulario para los datos del usuario -->
+                    <div class="form-group">
+                        <label for="password_registro">Contraseña:</label>
+                        <input type="password" id="password_registro" name="password_registro" required placeholder="••••••••">
+                    </div>
 
-                    <label for="email_registro">Email:</label>
-                    <input type="email" id="email_registro" name="email_registro" required>
-
-                    <label for="password_registro">Contraseña:</label>
-                    <input type="password" id="password_registro" name="password_registro" required>
-
-                    <label for="confirm_password">Confirmar Contraseña:</label>
-                    <input type="password" id="confirm_password" name="confirm_password" required>
+                    <div class="form-group">
+                        <label for="confirm_password">Confirmar Contraseña:</label>
+                        <input type="password" id="confirm_password" name="confirm_password" required placeholder="••••••••">
+                    </div>
                 </div>
 
-                <div class="personal-data">
+                <div class="form-sections-container">
+                    <div class="personal-data">
+                        <h3>Datos Personales</h3>
+                        
+                        <div class="form-group">
+                            <label for="nombre">Nombre:</label>
+                            <input type="text" id="nombre" name="nombre" required placeholder="Juan">
+                        </div>
 
-                    <!-- formulario de datos personales del usuario -->
+                        <div class="form-group">
+                            <label for="apellido">Apellido:</label>
+                            <input type="text" id="apellido" name="apellido" required placeholder="Pérez">
+                        </div>
 
-                    <label for="obra_social">Obra Social:</label>
-                    <input type="text" id="obra_social" name="obra_social" required>
+                        <div class="form-group">
+                            <label for="dni">DNI:</label>
+                            <input type="text" id="dni" name="dni" required placeholder="12.345.678">
+                        </div>
 
-                    <label for="nombre">Nombre:</label>
-                    <input type="text" id="nombre" name="nombre" required>
+                        <div class="form-group">
+                            <label for="telefono">Teléfono:</label>
+                            <input type="tel" id="telefono" name="telefono" required placeholder="+54 351 234 5678">
+                        </div>
 
-                    <label for="apellido">Apellido:</label>
-                    <input type="text" id="apellido" name="apellido" required>
+                        <div class="form-group">
+                            <label for="fecha_nacimiento">Fecha de Nacimiento:</label>
+                            <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required>
+                        </div>
 
-                    <label for="dni">DNI:</label>
-                    <input type="text" id="dni" name="dni" required>
+                        <div class="form-group">
+                            <label for="obra_social">Obra Social:</label>
+                            <input type="text" id="obra_social" name="obra_social" required placeholder="Swiss Medical">
+                        </div>
 
-                    <label for="telefono">Teléfono:</label>
-                    <input type="tel" id="telefono" name="telefono" required>
+                        <div class="form-group">
+                            <label for="domicilio">Domicilio:</label>
+                            <input type="text" id="domicilio" name="domicilio" required placeholder="Av. Colón 1234">
+                        </div>
 
-                    <label for="fecha_nacimiento">Fecha de Nacimiento:</label>
-                    <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required>
+                        <div class="form-group">
+                            <label for="ciudad">Ciudad:</label>
+                            <input type="text" id="ciudad" name="ciudad" required placeholder="Córdoba">
+                        </div>
 
-                    <label for="domicilio">Domicilio:</label>
-                    <input type="text" id="domicilio" name="domicilio" required>
+                        <div class="form-group">
+                            <label for="provincia">Provincia:</label>
+                            <input type="text" id="provincia" name="provincia" required placeholder="Córdoba">
+                        </div>
 
-                    <label for="ciudad">Ciudad:</label>
-                    <input type="text" id="ciudad" name="ciudad" required>
+                        <div class="form-group">
+                            <label for="estado_civil">Estado Civil:</label>
+                            <select id="estado_civil" name="estado_civil" required>
+                                <option value="">Seleccionar...</option>
+                                <option value="soltero">Soltero</option>
+                                <option value="casado">Casado</option>
+                                <option value="divorciado">Divorciado</option>
+                                <option value="viudo">Viudo</option>
+                                <option value="otro">Otro</option>
+                            </select>
+                        </div>
 
-                    <label for="provincia">Provincia:</label>
-                    <input type="text" id="provincia" name="provincia" required>
+                        <div class="form-group">
+                            <label for="ocupacion">Ocupación:</label>
+                            <input type="text" id="ocupacion" name="ocupacion" required placeholder="Ingeniero">
+                        </div>
+                    </div>
 
-                    <label for="estado_civil">Estado Civil:</label>
-                    <select id="estado_civil" name="estado_civil" required>
-                        <option value="soltero">Soltero</option>
-                        <option value="casado">Casado</option>
-                        <option value="divorciado">Divorciado</option>
-                        <option value="viudo">Viudo</option>
-                        <option value="otro">Otro</option>
-                    </select>
+                    <div class="medical-history">
+                        <h3>Antecedentes Médicos</h3>
 
-                    <label for="ocupacion">Ocupación:</label>
-                    <input type="text" id="ocupacion" name="ocupacion" required>
+                        <div class="acceso-medical-section">
+                            <h4>Alergias</h4>
+                            <div class="checkbox-grid">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" id="penicilina" name="alergias[]" value="penicilina">
+                                    <span class="checkmark"></span>
+                                    Penicilina
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" id="yodo" name="alergias[]" value="yodo">
+                                    <span class="checkmark"></span>
+                                    Yodo
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" id="anestesia" name="alergias[]" value="anestesia">
+                                    <span class="checkmark"></span>
+                                    Anestesia
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" id="acrilicos" name="alergias[]" value="acrilicos">
+                                    <span class="checkmark"></span>
+                                    Acrílicos
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="acceso-medical-section">
+                            <h4>P.S.A</h4>
+                            <div class="checkbox-grid">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" id="B" name="psa[]" value="B">
+                                    <span class="checkmark"></span>
+                                    B
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" id="N" name="psa[]" value="N">
+                                    <span class="checkmark"></span>
+                                    N
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" id="A" name="psa[]" value="A">
+                                    <span class="checkmark"></span>
+                                    A
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="acceso-medical-section">
+                            <h4>Condiciones Médicas</h4>
+                            <div class="checkbox-grid">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" id="diabetes" name="enfermedades[]" value="diabetes">
+                                    <span class="checkmark"></span>
+                                    Diabetes
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" id="chagas" name="enfermedades[]" value="chagas">
+                                    <span class="checkmark"></span>
+                                    Chagas
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" id="epilepsia" name="enfermedades[]" value="epilepsia">
+                                    <span class="checkmark"></span>
+                                    Epilepsia
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" id="hepatitis" name="enfermedades[]" value="hepatitis">
+                                    <span class="checkmark"></span>
+                                    Hepatitis
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" id="artritis" name="enfermedades[]" value="artritis">
+                                    <span class="checkmark"></span>
+                                    Artritis
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" id="fiebre_reumatica" name="enfermedades[]" value="fiebre_reumatica">
+                                    <span class="checkmark"></span>
+                                    Fiebre Reumática
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" id="hipertiroidismo" name="enfermedades[]" value="hipertiroidismo">
+                                    <span class="checkmark"></span>
+                                    Hipertiroidismo
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" id="hemofilia" name="enfermedades[]" value="hemofilia">
+                                    <span class="checkmark"></span>
+                                    Hemofilia
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" id="embarazo" name="enfermedades[]" value="embarazo">
+                                    <span class="checkmark"></span>
+                                    Embarazo
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" id="lactancia" name="enfermedades[]" value="lactancia">
+                                    <span class="checkmark"></span>
+                                    Lactancia
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" id="anticoncep" name="enfermedades[]" value="anticoncep">
+                                    <span class="checkmark"></span>
+                                    Anticonceptivos
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" id="tbc" name="enfermedades[]" value="tbc">
+                                    <span class="checkmark"></span>
+                                    T.B.C
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" id="anticoagulantes" name="enfermedades[]" value="anticoagulantes">
+                                    <span class="checkmark"></span>
+                                    Anticoagulantes
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" id="enfermedad_cardiaca" name="enfermedades[]" value="enfermedad_cardiaca">
+                                    <span class="checkmark"></span>
+                                    Enfermedad Cardíaca
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" id="enfermedad_renal" name="enfermedades[]" value="enfermedad_renal">
+                                    <span class="checkmark"></span>
+                                    Enfermedad Renal
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" id="enfermedad_infecciosas" name="enfermedades[]" value="enfermedad_infecciosas">
+                                    <span class="checkmark"></span>
+                                    Enfermedades Infecciosas
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="acceso-medical-section">
+                            <h4>Información Adicional</h4>
+                            
+                            <div class="form-group">
+                                <label for="medicamentos">Medicamentos actuales:</label>
+                                <textarea id="medicamentos" name="medicamentos" rows="3" placeholder="Escribe los medicamentos actuales..."></textarea>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="control">Último control odontológico:</label>
+                                <textarea id="control" name="control" rows="3" placeholder="Especifica la fecha o detalles del último control..."></textarea>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="observaciones">Observaciones:</label>
+                                <textarea id="observaciones" name="observaciones" rows="4" placeholder="Agrega cualquier observación relevante..."></textarea>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="medical-history">
-
-                    <!-- formulario de antecedentes -->
-
-                    <h2>Antecedentes</h2>
-
-                    <h5>alergias</h5>
-
-                    <label for="penicilina">penicilina</label>
-                    <input type="checkbox" id="penicilina" name="alergias[]" value="penicilina">
-                    <label for="yodo">yodo</label>
-                    <input type="checkbox" id="yodo" name="alergias[]" value="yodo">
-                    <label for="anestesia">anestesia</label>
-                    <input type="checkbox" id="anestesia" name="alergias[]" value="anestesia">
-                    <label for="acrilicos">acrilicos</label>
-                    <input type="checkbox" id="acrilicos" name="alergias[]" value="acrilicos">
-
-                    <h5>P.S.A</h5>
-
-                    <label for="B">B</label>
-                    <input type="checkbox" id="B" name="psa[]" value="B">
-
-                    <label for="N">N</label>
-                    <input type="checkbox" id="N" name="psa[]" value="N">
-
-                    <label for="A">A</label>
-                    <input type="checkbox" id="A" name="psa[]" value="A">
-
-                    <h5>Condicion Medica</h5>
-
-                    <label for="Diabetes">Diabetes</label>
-                    <input type="checkbox" id="diabetes" name="enfermedades[]" value="diabetes">
-
-                    <label for="Chagas">Chagas</label>
-                    <input type="checkbox" id="chagas" name="enfermedades[]" value="chagas">
-
-                    <label for="Epilepsia">Epilepsia</label>
-                    <input type="checkbox" id="epilepsia" name="enfermedades[]" value="epilepsia">
-
-                    <label for="Hepatitis">Hepatitis</label>
-                    <input type="checkbox" id="hepatitis" name="enfermedades[]" value="epatitis">
-
-                    <label for="Artritis">Artritis</label>
-                    <input type="checkbox" id="artritis" name="enfermedades[]" value="artritis">
-
-                    <label for="Fiebre_reumatica">Fiebre reumática</label>
-                    <input type="checkbox" id="fiebre_reumatica" name="enfermedades[]" value="fiebre_reumatica">
-
-                    <label for="Hipertiroidismo">Hipertiroidismo</label>
-                    <input type="checkbox" id="hipertiroidismo" name="enfermedades[]" value="hipertiroidismo">
-
-                    <label for="Hemofilia">Hemofilia</label>
-                    <input type="checkbox" id="hemofilia" name="enfermedades[]" value="hemofilia">
-
-                    <label for="Embaraso">Embaraso</label>
-                    <input type="checkbox" id="embaraso" name="enfermedades[]" value="embaraso">
-
-                    <label for="Lactancia">Lactancia</label>
-                    <input type="checkbox" id="lactancia" name="enfermedades[]" value="lactancia">
-
-                    <label for="Anticoncep.">Anticoncep.</label>
-                    <input type="checkbox" id="anticoncep" name="enfermedades[]" value="anticoncep">
-
-                    <label for="tbc">T.B.C</label>
-                    <input type="checkbox" id="tbc" name="enfermedades[]" value="tbc">
-
-                    <label for="Anticuabulantes">Anticuabulantes</label>
-                    <input type="checkbox" id="anticuabulantes" name="enfermedades[]" value="anticuabulantes">
-
-                    <label for="Enfermedad_cardiaca">Enfermedad cardíaca</label>
-                    <input type="checkbox" id="enfermedad_cardiaca" name="enfermedades[]" value="enfermedad_cardiaca">
-
-                    <label for="Enfermedad_renal">Enfermedad renal</label>
-                    <input type="checkbox" id="enfermedad_renal" name="enfermedades[]" value="enfermedad_renal">
-
-                    <label for="Enfermedad_infecciosas">Enfermedad infecciosas</label>
-                    <input type="checkbox" id="enfermedad_infecciosas" name="enfermedades[]"
-                        value="enfermedad_infecciosas">
-
-                </div>
-
-                <button type="submit">Registrarse</button>
-
+                <button type="submit" class="submit-button">Registrarse</button>
             </form>
         </div>
     </main>
