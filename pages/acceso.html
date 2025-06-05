@@ -10,31 +10,38 @@
 
 <body>
 
-    <header>
-        <div class="logo-container">
-            <a href="../index.html">
-                <img src="images/logo.png" alt="Logo Vitalis" class="logo">
+    <header class="header">
+        <div class="header-container">
+            <div class="logo-container">
+                <a href="../index.html" class="logo-link">
+                    <img src="/assets/arbol-icono.jpg" alt="Vitalis" class="logo">
+
+                </a>
                 <span class="brand-name">Vitalis</span>
-            </a>
-        </div>
-        <nav class="main-nav">
-            <a href="../pages/CT.html" class="nav-button">Colonia Tirolesa</a>
-            <a href="../pages/VCP.html" class="nav-button">Villa Carlos Paz</a>
-        </nav>
-        <div class="auth-container">
-            <a href="#" class="login-button">Acceder</a>
-            <a href="../pages/perfil.html" class="perfil-button">
-                <img src="../assets/usuario (1).png" alt="perfil" class="perfil-icon">
-            </a>
+
+            </div>
+            <nav class="nav">
+                <a href="./CT.html" class="nav-link">Colonia Tirolesa</a>
+                <a href="./VCP.html" class="nav-link">Villa Carlos Paz</a>
+            </nav>
+            <div class="access-section">
+                <nav>
+                    <a href="#"><button class="access-button">Acceder</button></a>
+                    <a href="./perfil.html"><img src="/assets/usuario (1).png" class="user-icon"></img></a>
+                </nav>
+            </div>
         </div>
     </header>
 
     <main>
-        <h1>REGISTRARSE</h1>
 
-        <div>
+
+        <div class="login-form">
+
+            <!-- inicio de sesion -->
+
             <h2>INICIAR SESION</h2>
-            <form action="login.php" method="post">
+            <form action="./perfil.html" method="post">
                 <label for="email">Email:</label>
                 <input type="email" id="email" name="email" required>
 
@@ -45,11 +52,14 @@
             </form>
         </div>
 
-        <div>
-            <h2>CREAR PERFIL</h2>
+        <div class="register-container">
+            <h1>REGISTRARSE</h1>
 
-            <form action="registro.php" method="post">
-                <div>
+            <form action="registro.php" method="post" >
+                <div class="registration-login">
+
+                    <!-- formulario para los datos del usuario -->
+
                     <label for="email_registro">Email:</label>
                     <input type="email" id="email_registro" name="email_registro" required>
 
@@ -60,7 +70,10 @@
                     <input type="password" id="confirm_password" name="confirm_password" required>
                 </div>
 
-                <div>
+                <div class="personal-data">
+
+                    <!-- formulario de datos personales del usuario -->
+
                     <label for="obra_social">Obra Social:</label>
                     <input type="text" id="obra_social" name="obra_social" required>
 
@@ -101,9 +114,14 @@
                     <input type="text" id="ocupacion" name="ocupacion" required>
                 </div>
 
-                <div>
+                <div class="medical-history">
+
+                    <!-- formulario de antecedentes -->
+
                     <h2>Antecedentes</h2>
+
                     <h5>alergias</h5>
+
                     <label for="penicilina">penicilina</label>
                     <input type="checkbox" id="penicilina" name="alergias[]" value="penicilina">
                     <label for="yodo">yodo</label>
@@ -114,44 +132,63 @@
                     <input type="checkbox" id="acrilicos" name="alergias[]" value="acrilicos">
 
                     <h5>P.S.A</h5>
+
                     <label for="B">B</label>
                     <input type="checkbox" id="B" name="psa[]" value="B">
+
                     <label for="N">N</label>
                     <input type="checkbox" id="N" name="psa[]" value="N">
+
                     <label for="A">A</label>
                     <input type="checkbox" id="A" name="psa[]" value="A">
 
                     <h5>Condicion Medica</h5>
+
                     <label for="Diabetes">Diabetes</label>
                     <input type="checkbox" id="diabetes" name="enfermedades[]" value="diabetes">
+
                     <label for="Chagas">Chagas</label>
                     <input type="checkbox" id="chagas" name="enfermedades[]" value="chagas">
+
                     <label for="Epilepsia">Epilepsia</label>
                     <input type="checkbox" id="epilepsia" name="enfermedades[]" value="epilepsia">
+
                     <label for="Hepatitis">Hepatitis</label>
                     <input type="checkbox" id="hepatitis" name="enfermedades[]" value="epatitis">
+
                     <label for="Artritis">Artritis</label>
                     <input type="checkbox" id="artritis" name="enfermedades[]" value="artritis">
+
                     <label for="Fiebre_reumatica">Fiebre reumática</label>
                     <input type="checkbox" id="fiebre_reumatica" name="enfermedades[]" value="fiebre_reumatica">
+
                     <label for="Hipertiroidismo">Hipertiroidismo</label>
                     <input type="checkbox" id="hipertiroidismo" name="enfermedades[]" value="hipertiroidismo">
+
                     <label for="Hemofilia">Hemofilia</label>
                     <input type="checkbox" id="hemofilia" name="enfermedades[]" value="hemofilia">
+
                     <label for="Embaraso">Embaraso</label>
                     <input type="checkbox" id="embaraso" name="enfermedades[]" value="embaraso">
+
                     <label for="Lactancia">Lactancia</label>
                     <input type="checkbox" id="lactancia" name="enfermedades[]" value="lactancia">
+
                     <label for="Anticoncep.">Anticoncep.</label>
                     <input type="checkbox" id="anticoncep" name="enfermedades[]" value="anticoncep">
+
                     <label for="tbc">T.B.C</label>
                     <input type="checkbox" id="tbc" name="enfermedades[]" value="tbc">
+
                     <label for="Anticuabulantes">Anticuabulantes</label>
                     <input type="checkbox" id="anticuabulantes" name="enfermedades[]" value="anticuabulantes">
+
                     <label for="Enfermedad_cardiaca">Enfermedad cardíaca</label>
                     <input type="checkbox" id="enfermedad_cardiaca" name="enfermedades[]" value="enfermedad_cardiaca">
+
                     <label for="Enfermedad_renal">Enfermedad renal</label>
                     <input type="checkbox" id="enfermedad_renal" name="enfermedades[]" value="enfermedad_renal">
+
                     <label for="Enfermedad_infecciosas">Enfermedad infecciosas</label>
                     <input type="checkbox" id="enfermedad_infecciosas" name="enfermedades[]"
                         value="enfermedad_infecciosas">
@@ -159,29 +196,46 @@
                 </div>
 
                 <button type="submit">Registrarse</button>
-        </div>
-        </form>
 
+            </form>
+        </div>
     </main>
 
-    <footer>
-        <div class="footer-content">
-            <!-- los numeros de telefono y enlaces a redes sociales son genericos y no corresponden a los Consultorios reales -->
-            <div class="footer-telefonos">
-                <strong>Contactos:</strong><br>
-                Colonia Tirolesa: <a href="tel:+543512345678">+54 351 234 5678</a><br>
-                Villa Carlos Paz: <a href="tel:+543547654321">+54 3547 654 321</a>
-            </div>
-            <div class="footer-social">
-                <strong>Síguenos en:</strong><br>
-                <a href="https://www.facebook.com/vitalis" target="_blank">Facebook</a><br>
-                <a href="https://www.instagram.com/vitalis" target="_blank">Instagram</a><br>
-                <a href="https://www.twitter.com/vitalis" target="_blank">Twitter</a>
-            </div>
-            <div class="footer-copyright">
-                <small>&copy; 2025 Vitalis Consultorio Odontológico. Todos los derechos reservados.</small>
-            </div>
 
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <!-- Contactos -->
+                <div class="footer-contacts">
+                    <span>
+                        Colonia Tirolesa:
+                        <a href="tel:+543512345678">+54 351 234 5678</a>
+                    </span>
+                    <span>
+                        Villa Carlos Paz:
+                        <a href="tel:+543547654321">+54 3547 654 321</a>
+                    </span>
+                </div>
+
+                <!-- Redes sociales -->
+                <div class="footer-social">
+                    <a href="https://www.facebook.com/" target="_blank" class="social-icon">
+                        <img src="/assets/1485972229-facebooksocialnetworkbrandlogo_78984.png"></img>
+                    </a>
+                    <a href="https://www.instagram.com/" target="_blank" class="social-icon">
+                        <img src="/assets/INSTAGRAM_icon-icons.com_65535 (1).png"></img>
+                    </a>
+                    <a href="https://ar.linkedin.com/" target="_blank" class="social-icon">
+                        <img src="/assets/1485972244-linkedinsocialnetworkbrandlogo_78999.png"></img>
+                    </a>
+                </div>
+
+                <!-- Derechos de autor -->
+                <div class="footer-copyright">
+                    <p>© 2025 Vitalis Consultorio Odontológico. Todos los derechos reservados.</p>
+                </div>
+            </div>
+        </div>
     </footer>
 
 </body>

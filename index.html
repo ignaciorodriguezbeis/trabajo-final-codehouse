@@ -9,23 +9,26 @@
 </head>
 
 <body>
-    <header>
-        <div class="logo-container">
-            <a href="#">
-                <img src="images/logo.png" alt="Logo Vitalis" class="logo">
+    <header class="header">
+        <div class="header-container">
+            <div class="logo-container">
+                <a href="#" class="logo-link">
+                    <img src="/assets/arbol-icono.jpg" alt="Vitalis" class="logo">
+
+                </a>
                 <span class="brand-name">Vitalis</span>
-            </a>
-        </div>
-        <nav class="main-nav">
 
-            <a href="./pages/CT.html" class="nav-button">Colonia Tirolesa</a>
-            <a href="./pages/VCP.html" class="nav-button">Villa Carlos Paz</a>
-        </nav>
-        <div class="auth-container">
-            <a href="./pages/acceso.html" class="login-button">Acceder</a>
-            <a href="./pages/perfil.html" class="perfil-button"><img src="assets/usuario (1).png" alt="perfil"
-                    class="perfil-icon"></a>
-
+            </div>
+            <nav class="nav">
+                <a href="./pages/CT.html" class="nav-link">Colonia Tirolesa</a>
+                <a href="./pages/VCP.html" class="nav-link">Villa Carlos Paz</a>
+            </nav>
+            <div class="access-section">
+                <nav>
+                    <a href="./pages/acceso.html"><button class="access-button">Acceder</button></a>
+                    <a href="./pages/perfil.html"><img src="/assets/usuario (1).png" class="user-icon"></img></a>
+                </nav>
+            </div>
         </div>
     </header>
 
@@ -38,24 +41,41 @@
 
     </main>
 
-    <footer>
-        <div class="footer-content">
-            <!-- los numeros de telefono y enlaces a redes sociales son genericos y no corresponden a los Consultorios reales -->
-            <div class="footer-telefonos">
-                <strong>Contactos:</strong><br>
-                Colonia Tirolesa: <a href="tel:+543512345678">+54 351 234 5678</a><br>
-                Villa Carlos Paz: <a href="tel:+543547654321">+54 3547 654 321</a>
-            </div>
-            <div class="footer-social">
-                <strong>Síguenos en:</strong><br>
-                <a href="https://www.facebook.com/vitalis" target="_blank">Facebook</a><br>
-                <a href="https://www.instagram.com/vitalis" target="_blank">Instagram</a><br>
-                <a href="https://www.twitter.com/vitalis" target="_blank">Twitter</a>
-            </div>
-            <div class="footer-copyright">
-                <small>&copy; 2025 Vitalis Consultorio Odontológico. Todos los derechos reservados.</small>
-            </div>
 
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <!-- Contactos -->
+                <div class="footer-contacts">
+                    <span>
+                        Colonia Tirolesa:
+                        <a href="tel:+543512345678">+54 351 234 5678</a>
+                    </span>
+                    <span>
+                        Villa Carlos Paz:
+                        <a href="tel:+543547654321">+54 3547 654 321</a>
+                    </span>
+                </div>
+
+                <!-- Redes sociales -->
+                <div class="footer-social">
+                    <a href="https://www.facebook.com/" target="_blank" class="social-icon">
+                        <img src="/assets/1485972229-facebooksocialnetworkbrandlogo_78984.png"></img>
+                    </a>
+                    <a href="https://www.instagram.com/" target="_blank" class="social-icon">
+                        <img src="/assets/INSTAGRAM_icon-icons.com_65535 (1).png"></img>
+                    </a>
+                    <a href="https://ar.linkedin.com/" target="_blank" class="social-icon">
+                        <img src="/assets/1485972244-linkedinsocialnetworkbrandlogo_78999.png"></img>
+                    </a>
+                </div>
+
+                <!-- Derechos de autor -->
+                <div class="footer-copyright">
+                    <p>© 2025 Vitalis Consultorio Odontológico. Todos los derechos reservados.</p>
+                </div>
+            </div>
+        </div>
     </footer>
 </body>
 

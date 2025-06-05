@@ -9,229 +9,346 @@
 </head>
 
 <body>
-    <header>
-        <div class="logo-container">
-            <a href="../index.html">
-                <img src="images/logo.png" alt="Logo Vitalis" class="logo">
+
+    <header class="header">
+        <div class="header-container">
+            <div class="logo-container">
+                <a href="../index.html" class="logo-link">
+                    <img src="/assets/arbol-icono.jpg" alt="Vitalis" class="logo">
+
+                </a>
                 <span class="brand-name">Vitalis</span>
-            </a>
-        </div>
-        <nav class="main-nav">
 
-            <a href="../pages/CT.html" class="nav-button">Colonia Tirolesa</a>
-            <a href="../pages/VCP.html" class="nav-button">Villa Carlos Paz</a>
-        </nav>
-        <div class="auth-container">
-            <a href="#" class="perfil-button"><img src="../assets/usuario (1).png" alt="perfil" class="perfil-icon"></a>
-
-
+            </div>
+            <nav class="nav">
+                <a href="./CT.html" class="nav-link">Colonia Tirolesa</a>
+                <a href="./VCP.html" class="nav-link">Villa Carlos Paz</a>
+            </nav>
+            <div class="access-section">
+                <nav>
+                    <a href="./acceso.html"><button class="access-button">Acceder</button></a>
+                    <a href="#"><img src="/assets/usuario (1).png" class="user-icon"></img></a>
+                </nav>
+            </div>
         </div>
     </header>
 
-    <main>
-        <div class="perfil-container">
-            <!-- información personal del paciente -->
-            <div class="perfil-section">
-                <div class="card">
+
+    <main class="main-container">
+        <div class="grid">
+            <!-- info basica -->
+            <div>
+                <div class="card card-patient">
                     <div class="card-header">
-                        <div class="profile-photo">
-                            <img src="/placeholder.svg?height=128&width=128" alt="Foto de perfil" class="paciente-img">
+                        <div class="patient-photo">
+                            <img src="/placeholder.svg?height=128&width=128" alt="Foto de perfil">
                         </div>
-                        <h1 class="nombre-paciente">Juan Pérez García</h1>
-                        <p class="paciente-id">Paciente #12345</p>
+                        <h1 class="patient-name">Juan Pérez García</h1>
+                        <p class="patient-id">Paciente #12345</p>
                     </div>
-                    <div class="info-conteiner">
-                        <div class="info-edad">
-                            <span class="info-label">Edad:</span>
-                            <span>35 años</span>
+                    <div class="card-content">
+                        <div class="patient-info">
+                            <i data-lucide="calendar" class="info-icon"></i>
+                            <div>
+                                <span>Edad: </span>
+                                <span>35 años</span>
+                            </div>
                         </div>
-                        <div class="info-paciente">
-                            <span class="info-label">Teléfono:</span>
-                            <span>+34 612 345 678</span>
+                        <div class="patient-info">
+                            <i data-lucide="phone" class="info-icon"></i>
+                            <div>
+                                <span>Teléfono: </span>
+                                <span>+34 612 345 678</span>
+                            </div>
                         </div>
-                        <div class="info-paciente">
-                            <span class="info-label">Email:</span>
-                            <span>juan.perez@email.com</span>
+                        <div class="patient-info">
+                            <i data-lucide="mail" class="info-icon"></i>
+                            <div>
+                                <span>Email: </span>
+                                <span>juan.perez@email.com</span>
+                            </div>
                         </div>
-                        <div class="info-paciente">
-                            <span class="info-label">Última visita:</span>
-                            <span>15/05/2025</span>
+                        <div class="patient-info">
+                            <i data-lucide="building-2" class="info-icon"></i>
+                            <div>
+                                <span>Obra Social: </span>
+                                <span>Swiss Medical</span>
+                            </div>
                         </div>
-                        <div class="info-paciente">
-                            <span class="info-label">Próxima cita:</span>
-                            <span class="next-appointment">20/06/2025</span>
+                        <div class="patient-info">
+                            <i data-lucide="calendar" class="info-icon"></i>
+                            <div>
+                                <span>Última visita: </span>
+                                <span>15/05/2025</span>
+                            </div>
                         </div>
-                    </div>
-                    <div class="info-footer">
+                        <div class="patient-info">
+                            <i data-lucide="calendar" class="info-icon next-appointment"></i>
+                            <div>
+                                <span>Próxima cita: </span>
+                                <span class="next-appointment-text">20/06/2025</span>
+                            </div>
+                        </div>
                         <button class="edit-button">Editar Perfil</button>
                     </div>
                 </div>
-
             </div>
-            <div class="perfil-main-section">
-                <!-- informacion medica -->
 
-                <div class="card">
+
+            <div>
+                <!-- info medica -->
+                <div class="card card-medical">
+                    <div class="card-header">
+                        <h2>Información Médica</h2>
+                    </div>
                     <div class="card-content">
-                        <div class="info-medica">
-                            <div class="info-section">
+                        <div class="medical-grid">
+                            <!-- Antecedentes -->
+                            <div class="medical-section">
                                 <h3>ANTECEDENTES:</h3>
-                                <div class="checkbox-info">
-                                    <label><input type="checkbox" checked> Diabetes</label>
-                                    <label><input type="checkbox"> Chagas</label>
-                                    <label><input type="checkbox"> Epilepsia</label>
-                                    <label><input type="checkbox"> Epatitis</label>
-                                    <label><input type="checkbox"> Artritis</label>
-                                    <label><input type="checkbox">Fiebre Reumatica</label>
-                                    <label><input type="checkbox"> Hipertiroidismo</label>
-                                    <label><input type="checkbox"> Hemofilia</label>
-                                    <label><input type="checkbox"> Embarazo</label>
-                                    <label><input type="checkbox"> Lactancia</label>
-                                    <label><input type="checkbox"> Anticonceptivos</label>
-                                    <label><input type="checkbox"> T.B.C</label>
-                                    <label><input type="checkbox"> Anticuagulantes</label>
-                                    <label><input type="checkbox"> Enfermedad cardíaca</label>
-                                    <label><input type="checkbox"> Enfermedad renal</label>
-                                    <label><input type="checkbox"> Enfermedad infecciosa</label>
+                                <div class="checkbox-group">
+                                    <div class="checkbox-item">
+                                        <input type="checkbox" class="checkbox" checked>
+                                        <label class="checkbox-label">Diabetes</label>
+                                    </div>
+                                    <div class="checkbox-item">
+                                        <input type="checkbox" class="checkbox">
+                                        <label class="checkbox-label">Chagas</label>
+                                    </div>
+                                    <div class="checkbox-item">
+                                        <input type="checkbox" class="checkbox">
+                                        <label class="checkbox-label">Epilepsia</label>
+                                    </div>
+                                    <div class="checkbox-item">
+                                        <input type="checkbox" class="checkbox">
+                                        <label class="checkbox-label">Hepatitis</label>
+                                    </div>
+                                    <div class="checkbox-item">
+                                        <input type="checkbox" class="checkbox">
+                                        <label class="checkbox-label">Artritis</label>
+                                    </div>
+                                    <div class="checkbox-item">
+                                        <input type="checkbox" class="checkbox">
+                                        <label class="checkbox-label">Fiebre Reumática</label>
+                                    </div>
+                                    <div class="checkbox-item">
+                                        <input type="checkbox" class="checkbox">
+                                        <label class="checkbox-label">Hipertiroidismo</label>
+                                    </div>
+                                    <div class="checkbox-item">
+                                        <input type="checkbox" class="checkbox">
+                                        <label class="checkbox-label">Hemofilia</label>
+                                    </div>
+                                    <div class="checkbox-item">
+                                        <input type="checkbox" class="checkbox">
+                                        <label class="checkbox-label">Embarazo</label>
+                                    </div>
+                                    <div class="checkbox-item">
+                                        <input type="checkbox" class="checkbox">
+                                        <label class="checkbox-label">Lactancia</label>
+                                    </div>
+                                    <div class="checkbox-item">
+                                        <input type="checkbox" class="checkbox">
+                                        <label class="checkbox-label">Anticonceptivos</label>
+                                    </div>
+                                    <div class="checkbox-item">
+                                        <input type="checkbox" class="checkbox">
+                                        <label class="checkbox-label">T.B.C</label>
+                                    </div>
+                                    <div class="checkbox-item">
+                                        <input type="checkbox" class="checkbox">
+                                        <label class="checkbox-label">Anticoagulantes</label>
+                                    </div>
+                                    <div class="checkbox-item">
+                                        <input type="checkbox" class="checkbox">
+                                        <label class="checkbox-label">Enfermedad cardíaca</label>
+                                    </div>
+                                    <div class="checkbox-item">
+                                        <input type="checkbox" class="checkbox">
+                                        <label class="checkbox-label">Enfermedad renal</label>
+                                    </div>
+                                    <div class="checkbox-item">
+                                        <input type="checkbox" class="checkbox">
+                                        <label class="checkbox-label">Enfermedad infecciosa</label>
+                                    </div>
+                                </div>
+                            </div>
 
-                                </div>
-                            </div>
-                            <div class="info-section">
+                            <!-- Alergias -->
+                            <div class="medical-section">
                                 <h3>ALERGIAS:</h3>
-                                <div class="checkbox-info">
-                                    <label><input type="checkbox" checked> Penicilina</label>
-                                    <label><input type="checkbox" checked> Yodo</label>
-                                    <label><input type="checkbox"> Anestesia</label>
-                                    <label><input type="checkbox"> Acrílicos</label>
+                                <div class="checkbox-group">
+                                    <div class="checkbox-item">
+                                        <input type="checkbox" class="checkbox" checked>
+                                        <label class="checkbox-label">Penicilina</label>
+                                    </div>
+                                    <div class="checkbox-item">
+                                        <input type="checkbox" class="checkbox" checked>
+                                        <label class="checkbox-label">Yodo</label>
+                                    </div>
+                                    <div class="checkbox-item">
+                                        <input type="checkbox" class="checkbox">
+                                        <label class="checkbox-label">Anestesia</label>
+                                    </div>
+                                    <div class="checkbox-item">
+                                        <input type="checkbox" class="checkbox">
+                                        <label class="checkbox-label">Acrílicos</label>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="info-section">
+
+                            <!-- P.S.A -->
+                            <div class="medical-section">
                                 <h3>P.S.A:</h3>
-                                <div class="checkbox-info">
-                                    <label><input type="checkbox" checked> B</label>
-                                    <label><input type="checkbox"> N</label>
-                                    <label><input type="checkbox"> A</label>
+                                <div class="checkbox-group">
+                                    <div class="checkbox-item">
+                                        <input type="checkbox" class="checkbox" checked>
+                                        <label class="checkbox-label">B</label>
+                                    </div>
+                                    <div class="checkbox-item">
+                                        <input type="checkbox" class="checkbox">
+                                        <label class="checkbox-label">N</label>
+                                    </div>
+                                    <div class="checkbox-item">
+                                        <input type="checkbox" class="checkbox">
+                                        <label class="checkbox-label">A</label>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Tratamientos -->
-
-                <div class="card">
+                <!-- info tratamientoss -->
+                <div class="card card-treatments">
                     <div class="card-header">
-                        <h2 class="card-title">Plan de Tratamiento</h2>
-                        <p class="card-description">Tratamientos actuales y programados</p>
+                        <h2>Plan de Tratamiento</h2>
+                        <p>Tratamientos actuales y programados</p>
                     </div>
                     <div class="card-content">
-                        <div class="treatment-item">
+                        <div class="treatment-item treatment-current">
                             <div class="treatment-header">
-                                <h3>Endodoncia - Pieza 26</h3>
-                                <span class="badge badge-warning">En progreso</span>
+                                <h3 class="treatment-title">Endodoncia - Pieza 26</h3>
+                                <span class="Estado estado-progreso">En progreso</span>
                             </div>
-                            <p class="treatment-description">Tratamiento de conducto en molar superior
-                                izquierdo.</p>
+                            <p class="treatment-description">Tratamiento de conducto en molar superior izquierdo.</p>
                             <div class="treatment-date">
-                                <span>📅 Iniciado: 15/05/2025</span>
+                                <i data-lucide="calendar" class="date-icon"></i>
+                                <span>Iniciado: 15/05/2025</span>
                             </div>
                         </div>
 
-                        <div class="treatment-item">
+                        <div class="treatment-item treatment-current">
                             <div class="treatment-header">
-                                <h3>Corona - Pieza 26</h3>
-                                <span class="badge badge-outline">Programado</span>
+                                <h3 class="treatment-title">Corona - Pieza 26</h3>
+                                <span class="Estado estado-programado">Programado</span>
                             </div>
                             <p class="treatment-description">Colocación de corona de porcelana tras finalizar
                                 endodoncia.</p>
                             <div class="treatment-date">
-                                <span>📅 Programado: 20/06/2025</span>
+                                <i data-lucide="calendar" class="date-icon"></i>
+                                <span>Programado: 20/06/2025</span>
                             </div>
                         </div>
 
-                        <div class="treatment-item">
+                        <div class="treatment-item treatment-current">
                             <div class="treatment-header">
-                                <h3>Limpieza dental</h3>
-                                <span class="badge badge-outline">Programado</span>
+                                <h3 class="treatment-title">Limpieza dental</h3>
+                                <span class="Estado estado-programado">Programado</span>
                             </div>
                             <p class="treatment-description">Limpieza dental profesional y revisión general.</p>
                             <div class="treatment-date">
-                                <span>📅 Programado: 20/09/2025</span>
+                                <i data-lucide="calendar" class="date-icon"></i>
+                                <span>Programado: 20/09/2025</span>
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <!-- historial -->
-
-                <div class="card">
+                <div class="card card-history">
                     <div class="card-header">
-                        <h2 class="card-title">Historial de Tratamientos</h2>
-                        <p class="card-description">Registro de tratamientos completados</p>
+                        <h2>Historial de Tratamientos</h2>
+                        <p>Registro de tratamientos completados</p>
                     </div>
                     <div class="card-content">
-                        <div class="treatment-item">
+                        <div class="treatment-item treatment-history">
                             <div class="treatment-header">
-                                <h3>Extracción - Pieza 18</h3>
-                                <span class="badge badge-secondary">Completado</span>
+                                <h3 class="treatment-title history">Extracción - Pieza 18</h3>
+                                <span class="Estado estado-completo">Completado</span>
                             </div>
-                            <p class="treatment-description">Extracción de muela del juicio superior derecha.
-                            </p>
-                            <div class="treatment-date">
-                                <span>✅ Completado: 10/01/2025</span>
+                            <p class="treatment-description">Extracción de muela del juicio superior derecha.</p>
+                            <div class="treatment-date history">
+                                <span>✅</span>
+                                <span>Completado: 10/01/2025</span>
                             </div>
                         </div>
 
-                        <div class="treatment-item">
+                        <div class="treatment-item treatment-history">
                             <div class="treatment-header">
-                                <h3>Empaste - Pieza 36</h3>
-                                <span class="badge badge-secondary">Completado</span>
+                                <h3 class="treatment-title history">Empaste - Pieza 36</h3>
+                                <span class="Estado estado-completo">Completado</span>
                             </div>
-                            <p class="treatment-description">Empaste de composite en molar inferior izquierdo.
-                            </p>
-                            <div class="treatment-date">
-                                <span>✅ Completado: 05/12/2024</span>
+                            <p class="treatment-description">Empaste de composite en molar inferior izquierdo.</p>
+                            <div class="treatment-date history">
+                                <span>✅</span>
+                                <span>Completado: 05/12/2024</span>
                             </div>
                         </div>
 
-                        <div class="treatment-item">
+                        <div class="treatment-item treatment-history">
                             <div class="treatment-header">
-                                <h3>Limpieza dental</h3>
-                                <span class="badge badge-secondary">Completado</span>
+                                <h3 class="treatment-title history">Limpieza dental</h3>
+                                <span class="Estado estado-completo">Completado</span>
                             </div>
-                            <p class="treatment-description">Limpieza dental profesional y aplicación de flúor.
-                            </p>
-                            <div class="treatment-date">
-                                <span>✅ Completado: 15/06/2024</span>
+                            <p class="treatment-description">Limpieza dental profesional y aplicación de flúor.</p>
+                            <div class="treatment-date history">
+                                <span>✅</span>
+                                <span>Completado: 15/06/2024</span>
                             </div>
                         </div>
                     </div>
                 </div>
-
             </div>
         </div>
     </main>
 
-     <footer>
-        <div class="footer-content">
-            <!-- los numeros de telefono y enlaces a redes sociales son genericos y no corresponden a los Consultorios reales -->
-            <div class="footer-telefonos">
-                <strong>Contactos:</strong><br>
-                Colonia Tirolesa: <a href="tel:+543512345678">+54 351 234 5678</a><br>
-                Villa Carlos Paz: <a href="tel:+543547654321">+54 3547 654 321</a>
-            </div>
-            <div class="footer-social">
-                <strong>Síguenos en:</strong><br>
-                <a href="https://www.facebook.com/vitalis" target="_blank">Facebook</a><br>
-                <a href="https://www.instagram.com/vitalis" target="_blank">Instagram</a><br>
-                <a href="https://www.twitter.com/vitalis" target="_blank">Twitter</a>
-            </div>
-            <div class="footer-copyright">
-                <small>&copy; 2025 Vitalis Consultorio Odontológico. Todos los derechos reservados.</small>
-            </div>
 
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <!-- Contactos -->
+                <div class="footer-contacts">
+                    <span>
+                        Colonia Tirolesa:
+                        <a href="tel:+543512345678">+54 351 234 5678</a>
+                    </span>
+                    <span>
+                        Villa Carlos Paz:
+                        <a href="tel:+543547654321">+54 3547 654 321</a>
+                    </span>
+                </div>
+
+                <!-- Redes sociales -->
+                <div class="footer-social">
+                    <a href="https://www.facebook.com/" target="_blank" class="social-icon">
+                        <img src="/assets/1485972229-facebooksocialnetworkbrandlogo_78984.png"></img>
+                    </a>
+                    <a href="https://www.instagram.com/" target="_blank" class="social-icon">
+                        <img src="/assets/INSTAGRAM_icon-icons.com_65535 (1).png"></img>
+                    </a>
+                    <a href="https://ar.linkedin.com/" target="_blank" class="social-icon">
+                        <img src="/assets/1485972244-linkedinsocialnetworkbrandlogo_78999.png"></img>
+                    </a>
+                </div>
+
+                <!-- Derechos de autor -->
+                <div class="footer-copyright">
+                    <p>© 2025 Vitalis Consultorio Odontológico. Todos los derechos reservados.</p>
+                </div>
+            </div>
+        </div>
     </footer>
-
 </body>
 
 </html>
