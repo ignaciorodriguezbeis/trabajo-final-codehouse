@@ -84,7 +84,7 @@ body {
     gap: 0.75rem;
 }
 
-/* me arte de treatar de centrar el boton asi que se queda asi asta la proxima */
+/* me harte de treatar de centrar el boton. asi que se queda asi hasta la proxima */
 .access-button {
     background: rgba(255, 255, 255, 0.1);
     color: white;
@@ -795,4 +795,56 @@ select:focus,
 textarea:focus {
     outline: 2px solid #3b82f6;
     outline-offset: 2px;
+}
+
+
+/* COLONIA TIROLESA */
+
+.ct-main-content {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+}
+
+.ct-main-header,
+.ct-section-header {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: #0f172a;
+    margin-bottom: 1rem;
+}
+
+.ct-subsection-header {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-top: 2rem;
+    margin-bottom: 0.75rem;
+    color: #0369a1;
+}
+
+.ct-paragraph {
+    margin-bottom: 1rem;
+    color: #334155;
+    line-height: 1.6;
+}
+
+.ct-list {
+    margin: 1rem 0;
+    padding-left: 1.5rem;
+}
+
+.ct-list-item {
+    margin-bottom: 0.5rem;
+}
+
+.ct-map-container {
+    margin: 2rem 0;
+    text-align: center;
+}
+
+.ct-image {
+    display: block;
+    margin: 2rem auto;
+    max-width: 100%;
+    border-radius: 0.5rem;
 }
