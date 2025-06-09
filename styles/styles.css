@@ -1154,13 +1154,18 @@ textarea:focus {
 }
 
 .home-img-consultorios {
-    background-color: white;
+    background-color: #c5f1f1;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     padding: 20px;
     flex: 1 1 45%;
     min-width: 300px;
     text-align: left;
+}
+
+.home-img-consultorios ul {
+    list-style: none;
+    padding-left: 0;
 }
 
 /* Responsivo para móviles */
