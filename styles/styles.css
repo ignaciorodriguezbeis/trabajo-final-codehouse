@@ -1016,8 +1016,9 @@ button:hover,
 .vcp-mapa-info {
     display: flex;
     flex-wrap: wrap;
-    padding: 20px;
     gap: 20px;
+    padding: 20px;
+    align-items: stretch;
 }
 
 .vcp-mapa-info iframe {
@@ -1026,40 +1027,59 @@ button:hover,
 }
 
 .vcp-ubicacion-horario {
-    flex: 1 1 45%;
+    flex: 1;
+    min-width: 300px;
+    padding: 10px;
+    background-color: #f7fcfc; 
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
 }
+
 
 .vcp-icono-banner {
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
-    padding: 20px;
-    gap: 20px;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 40px 20px;
+    background-color: #e6f7f7;
+    border-radius: 12px;
+    margin: 40px auto;
+    max-width: 1200px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
 }
 
-.vcp-icono-banner section {
+.vcp-icono-info {
     display: flex;
     flex-direction: column;
-    align-items: center;
-
+    align-items: flex-start;
+    text-align: left;
+    gap: 15px;
+    max-width: 50%;
 }
 
-.vcp-icono-banner img:first-child {
-    width: 100px;
-    height: auto;
+.vcp-icono-img {
+    width: 130px;
+    height: 130px;
+    object-fit: cover;
     border-radius: 50%;
+    border: 4px solid #20c997;
 }
 
-.vcp-icono-banner h1 {
-    margin: 10px 0 0;
-    font-size: 1.5rem;
-    color: #333;
+.vcp-hogar-titulo {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #20c997;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 10px 0 0 0;
 }
 
-.vcp-icono-banner img:last-child {
-    flex: 1;
-    max-width: 500px;
+.vcp-banner-img {
+    max-width: 50%;
     height: auto;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.08);
 }
 
 
@@ -1084,16 +1104,20 @@ button:hover,
     flex-wrap: wrap;
     padding: 20px;
     gap: 20px;
+    align-items: flex-start;
 }
 
 .vcp-servicios-section img {
-    width: 40%;
-    max-width: 300px;
+   width: 60%;
+    max-width: 600px;
     height: auto;
+    flex: 1 1 60%;
+    border-radius: 10px;
 }
 
 .vcp-servicios-lista {
-    flex: 1;
+   flex: 1 1 35%;
+    min-width: 280px;
 }
 
 .vcp-servicios-lista ul {
@@ -1121,21 +1145,31 @@ button:hover,
 }
 
 
-.vcp-ultimos-divs {
+.vcp-financiamiento-comodidad {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
     padding: 20px;
 }
 
-.vcp-ultimos-divs>div {
+.vcp-financiamiento-comodidad>div {
     flex: 1 1 45%;
     background: #e6f7f7;
     padding: 20px;
     border-radius: 10px;
 }
 
+@media (max-width: 768px) {
+    .vcp-servicios-section {
+        flex-direction: column;
+    }
 
+    .vcp-servicios-section img,
+    .vcp-servicios-lista {
+        width: 100%;
+        flex: 1 1 100%;
+    }
+}
 
 /* HOME */
 
@@ -1235,7 +1269,7 @@ button:hover,
     font-size: 1.2rem;
 }
 
-/* Imágenes de fondo específicas */
+/* Imágenes de fondo para los tratamientos*/
 .Odontología-general {
     background-image: url('/assets/sonrisa-dientes-sanos-perfectos-mujer-joven_168410-402.jpg');
 }
@@ -1301,25 +1335,3 @@ button:hover,
     padding-left: 0;
 }
 
-/* Responsivo para móviles */
-@media (max-width: 768px) {
-    .home-img-tratamientos {
-        flex: 1 1 calc(50% - 20px);
-    }
-
-    .home-img-consultorios {
-        flex: 1 1 100%;
-    }
-
-    .home-header-text {
-        width: 90%;
-        left: 5%;
-        padding-left: 0;
-        text-align: center;
-    }
-
-    .home-logo-title {
-        left: 50%;
-        transform: translateX(-50%);
-    }
-}
