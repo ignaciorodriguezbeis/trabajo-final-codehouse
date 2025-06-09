@@ -848,3 +848,340 @@ textarea:focus {
     max-width: 100%;
     border-radius: 0.5rem;
 }
+
+
+
+
+/* villa carlos paz */
+
+.vcp-main-header-container {
+    background: url('/assets/tu-imagen-de-fondo.jpg') no-repeat center center;
+    background-size: cover;
+    padding: 20px;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    width: 100%;
+}
+
+.vcp-main-header {
+    font-size: 2rem;
+    color: #20c997;
+    margin: 0;
+}
+
+.vcp-main-header-container p {
+    font-size: 1rem;
+    color: white;
+    margin: 5px 0 0;
+}
+
+
+.vcp-mapa-info {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    gap: 20px;
+}
+
+.vcp-mapa-info iframe {
+    flex: 1 1 45%;
+    border: none;
+}
+
+.vcp-ubicacion-horario {
+    flex: 1 1 45%;
+}
+
+.vcp-icono-banner {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 20px;
+    gap: 20px;
+}
+
+.vcp-icono-banner section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.vcp-icono-banner img:first-child {
+    width: 100px;
+    height: auto;
+    border-radius: 50%;
+}
+
+.vcp-icono-banner h1 {
+    margin: 10px 0 0;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.vcp-icono-banner img:last-child {
+    flex: 1;
+    max-width: 500px;
+    height: auto;
+}
+
+
+.vcp-ultimo-bloque {
+    text-align: center;
+    padding: 20px;
+}
+
+.vcp-ultimo-bloque h1 {
+    font-size: 2rem;
+    color: #20c997;
+}
+
+.vcp-ultimo-bloque p {
+    font-size: 1rem;
+    color: #555;
+}
+
+
+.vcp-servicios-section {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    gap: 20px;
+}
+
+.vcp-servicios-section img {
+    width: 40%;
+    max-width: 300px;
+    height: auto;
+}
+
+.vcp-servicios-lista {
+    flex: 1;
+}
+
+.vcp-servicios-lista ul {
+    list-style: none;
+    padding: 0;
+}
+
+.vcp-servicios-lista li {
+    background: #e6f7f7;
+    margin-bottom: 10px;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.vcp-servicios-lista li>p,
+.vcp-servicios-lista li ul {
+    display: none;
+    margin-top: 5px;
+}
+
+.vcp-servicios-lista li.abierto>p,
+.vcp-servicios-lista li.abierto>ul {
+    display: block;
+}
+
+
+.vcp-ultimos-divs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+.vcp-ultimos-divs>div {
+    flex: 1 1 45%;
+    background: #e6f7f7;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+
+
+/* HOME */
+
+.home-header-container {
+    background-image: url('/assets/tipos-de-sonrisa-1.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 60px 20px;
+    text-align: center;
+    position: relative;
+    height: 36rem;
+}
+
+.home-logo-title {
+    position: absolute;
+    top: 200px;
+    left: 31%;
+    border-radius: 50%;
+    height: 120px;
+    width: 120px;
+    display: flex;
+    align-items: center;
+    background: transparent;
+}
+
+.home-header-text {
+    color: whitesmoke;
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px #000;
+    margin-top: 20px;
+    background: rgba(255, 255, 255, 0.3);
+    height: 200px;
+    width: 40%;
+    border-radius: 2rem;
+    position: absolute;
+    top: 135px;
+    left: 30%;
+    padding-left: 120px;
+}
+
+.home-main-header {
+    color: #00c6a7;
+    display: inline-block;
+    padding: 15px 30px;
+    border-radius: 10px;
+    font-size: 2.5rem;
+}
+
+.home-subheader {
+    color: #333;
+    margin-top: 10px;
+    font-size: 22px;
+    font-weight: 500;
+    padding: 10px 20px;
+}
+
+/* Tratamientos */
+.home-tratamientos-container {
+    padding: 40px 20px;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.home-tratamientos-container h2 {
+    width: 100%;
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.home-img-tratamientos {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    flex: 1 1 calc(25% - 20px);
+    min-width: 200px;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    padding-bottom: 10px;
+    color: white;
+}
+
+.home-img-tratamientos h3 {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+}
+
+/* Imágenes de fondo específicas */
+.Odontología-general {
+    background-image: url('/assets/sonrisa-dientes-sanos-perfectos-mujer-joven_168410-402.jpg');
+}
+
+.Implantologia {
+    background-image: url('/assets/implantes-dentales.jpg');
+}
+
+.Endodoncia {
+    background-image: url('/assets/render-tratamiento-endodoncia.webp');
+}
+
+.Estética-dental {
+    background-image: url('/assets/estetica-dental.jpg');
+}
+
+.Ortodoncia {
+    background-image: url('/assets/ortodoncia-clinica-dental.jpeg');
+}
+
+.protesis {
+    background-image: url('/assets/diferentes-tipos-de-protesis-dental.jpg');
+}
+
+.Periodoncia {
+    background-image: url('/assets/periodoncia-dental.jpg');
+}
+
+.Radiografía {
+    background-image: url('/assets/radiografia-dental.jpg');
+}
+
+/* Consultorios */
+.home-consultorios-container {
+    padding: 40px 20px;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.home-consultorios-container > h2 {
+    width: 100%;
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.home-img-consultorios {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    flex: 1 1 45%;
+    min-width: 300px;
+    text-align: left;
+}
+
+/* Responsivo para móviles */
+@media (max-width: 768px) {
+    .home-img-tratamientos {
+        flex: 1 1 calc(50% - 20px);
+    }
+
+    .home-img-consultorios {
+        flex: 1 1 100%;
+    }
+
+    .home-header-text {
+        width: 90%;
+        left: 5%;
+        padding-left: 0;
+        text-align: center;
+    }
+
+    .home-logo-title {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
