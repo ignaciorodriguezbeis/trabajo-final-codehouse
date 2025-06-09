@@ -800,17 +800,32 @@ textarea:focus {
 
 /* COLONIA TIROLESA */
 
+.ct-body {
+    background-color: #f7fafc;
+    color: #1e293b;
+
+}
+
 .ct-main-content {
     max-width: 1280px;
     margin: 0 auto;
     padding: 2rem 1rem;
 }
 
-.ct-main-header,
-.ct-section-header {
+.ct-main-header {
     font-size: 1.75rem;
     font-weight: 700;
-    color: #0f172a;
+    color: #0f766e;
+    margin-bottom: 1rem;
+    border-bottom: 3px solid #0f766e;
+    padding-bottom: 0.5rem;
+}
+
+.ct-section-header,
+.ct-about-section-header {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: #2563eb;
     margin-bottom: 1rem;
 }
 
@@ -819,7 +834,7 @@ textarea:focus {
     font-weight: 600;
     margin-top: 2rem;
     margin-bottom: 0.75rem;
-    color: #0369a1;
+    color: #0e7490;
 }
 
 .ct-paragraph {
@@ -831,15 +846,51 @@ textarea:focus {
 .ct-list {
     margin: 1rem 0;
     padding-left: 1.5rem;
+    list-style-type: disc;
+    color: #475569;
 }
 
 .ct-list-item {
     margin-bottom: 0.5rem;
 }
 
+
+a {
+    color: #0284c7;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #0369a1;
+    text-decoration: underline;
+}
+
+.ct-info-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-top: 2rem;
+    align-items: flex-start;
+}
+
+.ct-info-text-section {
+    flex: 1;
+    min-width: 280px;
+}
+
 .ct-map-container {
-    margin: 2rem 0;
-    text-align: center;
+    flex: 1;
+    min-width: 280px;
+}
+
+.ct-map-container iframe {
+    width: 100%;
+    height: 100%;
+    min-height: 400px;
+    border-radius: 0.5rem;
+    border: 1px solid #cbd5e1;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 .ct-image {
@@ -847,10 +898,92 @@ textarea:focus {
     margin: 2rem auto;
     max-width: 100%;
     border-radius: 0.5rem;
+    border: 2px solid #60a5fa;
+    object-fit: cover;
+    flex-shrink: 0;
 }
 
+.ct-about-section {
+    margin-top: 3rem;
+    background-color: #e0f2fe;
+    padding: 2rem;
+    border-radius: 0.75rem;
+}
 
+.ct-about-content {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    align-items: stretch;
+}
 
+.ct-image {
+    max-width: 500px;
+    width: 50%;
+    border-radius: 0.5rem;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+.ct-about-text {
+    flex: 1 1 45%;
+    min-width: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.ct-billing-section {
+    margin-top: 2rem;
+    background-color: #f0f9ff;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    border: 1px solid #bae6fd;
+}
+
+.ct-highlight {
+    background-color: #dbeafe;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border: 1px solid #93c5fd;
+    color: #1e3a8a;
+}
+
+button,
+.btn {
+    background-color: #0ea5e9;
+    color: white;
+    border: none;
+    padding: 0.6rem 1.2rem;
+    border-radius: 0.375rem;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+button:hover,
+.btn:hover {
+    background-color: #0284c7;
+}
+
+@media (max-width: 768px) {
+    .ct-about-content {
+        flex-direction: column;
+    }
+
+    .ct-image {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .ct-info-section {
+        flex-direction: column;
+    }
+
+    .ct-map-container iframe {
+        height: 300px;
+    }
+}
 
 /* villa carlos paz */
 
@@ -1147,7 +1280,7 @@ textarea:focus {
     margin: 0 auto;
 }
 
-.home-consultorios-container > h2 {
+.home-consultorios-container>h2 {
     width: 100%;
     font-size: 2rem;
     margin-bottom: 30px;
