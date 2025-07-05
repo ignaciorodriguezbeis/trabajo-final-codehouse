@@ -1,4 +1,5 @@
 /* Importar fuente */
+
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 /* font-family: 'Noto Sans'; */
 
@@ -18,95 +19,51 @@ body {
 
 /* Header */
 
-.header {
+header {
     background: linear-gradient(to right, #06b6d4, #14b8a6);
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .header-container {
-
-    margin: 3px auto;
-    padding: 0 1rem;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 5px 5px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 4rem;
 }
 
 .logo-container {
     display: flex;
     align-items: center;
+    
 }
-
-.logo {
-    height: 3.5rem;
-    width: 3.5rem;
-    margin-right: 0.5rem;
-    display: flex;
+.logo-container img {
+    height: 80px;
+    width: 80px;
     border-radius: 50%;
+    margin-right: 30px;
+    margin-left: 15px;
 }
-
-.brand-name {
-    font-size: 1.25rem;
-    font-weight: bold;
+.logo-container span{
+    font-size: 35px;
+    font-weight: 700;
     color: white;
-}
-
-.nav {
-    display: none;
-    gap: 2rem;
-}
-
-@media (min-width: 768px) {
-    .nav {
-        display: flex;
-    }
-}
-
-.nav-link {
-    color: #a5f3fc;
     text-decoration: none;
-    padding: 0.5rem 0.75rem;
-    border-radius: 0.375rem;
-    font-size: 0.875rem;
-    font-weight: 500;
-    transition: color 0.3s;
 }
 
-.nav-link:hover {
-    color: white;
-}
-
-.access-section {
+.header-container nav {
     display: flex;
     align-items: center;
-    gap: 0.75rem;
+    
 }
-
-/* me harte de treatar de centrar el boton. asi que se queda asi hasta la proxima */
-.access-button {
-    background: rgba(255, 255, 255, 0.1);
+.header-container nav a {
     color: white;
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    padding: 0.5rem 1rem;
-    border-radius: 0.375rem;
-    font-size: 0.875rem;
-    font-weight: 500;
-    cursor: pointer;
-    transition: background-color 0.3s;
+    text-decoration: none;
+    padding: 10px 15px;
+    font-size: 22px;
 }
-
-.access-button:hover {
-    background: rgba(255, 255, 255, 0.2);
-}
-
-.user-icon {
-    height: 4rem;
-    width: 3rem;
-    padding: 18px 0 0 0;
-}
-
 
 /* Footer */
 
@@ -135,42 +92,28 @@ body {
     justify-content: center;
     align-items: center;
     gap: 1.5rem;
-    font-size: 0.875rem;
+    font-size: 20px;
 }
 
 .footer-contacts a {
     color: #67e8f9;
     text-decoration: none;
-    transition: color 0.3s;
 }
 
 .footer-contacts a:hover {
-    color: #a5f3fc;
+    color: #0564f1;
 }
 
 .footer-social {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 1rem;
+    gap: 70px;
 }
 
-.social-icon {
-    color: #93c5fd;
-    padding: 0.5rem;
-    transition: color 0.3s;
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-}
-
-.social-icon:hover {
-    color: #bfdbfe;
-}
-
-.social-icon img {
-    height: 1.25rem;
-    width: 1.25rem;
+.footer-social img {
+    height: 25px;
+    width: 25px;
 }
 
 .footer-copyright {
@@ -287,7 +230,7 @@ body {
     border-radius: 0.375rem;
     font-weight: 500;
     cursor: pointer;
-    transition: background 0.3s;
+    transition: background-color 0.3s;
     margin-top: 1.5rem;
 }
 
@@ -301,11 +244,6 @@ body {
     gap: 1.5rem;
 }
 
-@media (min-width: 768px) {
-    .medical-grid {
-        grid-template-columns: repeat(3, 1fr);
-    }
-}
 
 .medical-section h3 {
     font-size: 1.125rem;
@@ -429,35 +367,6 @@ body {
     background: linear-gradient(to right, #4ade80, #10b981);
 }
 
-@media (max-width: 768px) {
-    .footer-contacts {
-        flex-direction: column;
-        gap: 0.5rem;
-    }
-
-    .medical-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .grid {
-        grid-template-columns: 1fr;
-    }
-
-    .auth-section {
-        gap: 0.5rem;
-    }
-
-    .access-button {
-        padding: 0.375rem 0.75rem;
-        font-size: 0.75rem;
-    }
-}
-
-@media (min-width: 1024px) {
-    .grid {
-        grid-template-columns: 1fr 2fr;
-    }
-}
 
 /* ACCESO */
 
@@ -568,11 +477,6 @@ body {
     gap: 2rem;
 }
 
-@media (min-width: 1024px) {
-    .form-sections-container {
-        grid-template-columns: 1fr 1.5fr;
-    }
-}
 
 .personal-data {
     background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%);
@@ -734,34 +638,6 @@ body {
     box-shadow: 0 12px 35px rgba(30, 64, 175, 0.4);
 }
 
-@media (max-width: 768px) {
-    main {
-        grid-template-columns: 1fr;
-        padding: 1rem;
-    }
-
-    .login-form,
-    .register-container {
-        padding: 2rem 1.5rem;
-    }
-
-    .footer-contacts {
-        flex-direction: column;
-        gap: 1rem;
-    }
-
-    .checkbox-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .form-sections-container {
-        grid-template-columns: 1fr;
-    }
-
-    .registration-login {
-        grid-template-columns: 1fr;
-    }
-}
 
 .form-group input:invalid,
 .form-group select:invalid,
@@ -966,25 +842,6 @@ button:hover,
     background-color: #0284c7;
 }
 
-@media (max-width: 768px) {
-    .ct-about-content {
-        flex-direction: column;
-    }
-
-    .ct-image {
-        max-width: 100%;
-        width: 100%;
-    }
-
-    .ct-info-section {
-        flex-direction: column;
-    }
-
-    .ct-map-container iframe {
-        height: 300px;
-    }
-}
-
 /* villa carlos paz */
 
 .vcp-main-header-container {
@@ -1157,18 +1014,6 @@ button:hover,
     background: #e6f7f7;
     padding: 20px;
     border-radius: 10px;
-}
-
-@media (max-width: 768px) {
-    .vcp-servicios-section {
-        flex-direction: column;
-    }
-
-    .vcp-servicios-section img,
-    .vcp-servicios-lista {
-        width: 100%;
-        flex: 1 1 100%;
-    }
 }
 
 /* HOME */
