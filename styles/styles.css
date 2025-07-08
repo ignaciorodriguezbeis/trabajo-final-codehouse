@@ -17,7 +17,7 @@ body {
     min-height: 100vh;
 }
 
-/* Header */
+/* HEADER */
 
 header {
     background: linear-gradient(to right, #06b6d4, #14b8a6);
@@ -65,7 +65,7 @@ header {
     font-size: 22px;
 }
 
-/* Footer */
+/* FOOTER */
 
 .footer {
     background: linear-gradient(to right, #334155, #1e293b);
@@ -124,7 +124,7 @@ header {
 }
 
 
-/* perfil */
+/* PERFIL */
 .main-container {
     max-width: 1280px;
     margin: 0 auto;
@@ -842,7 +842,7 @@ button:hover,
     background-color: #0284c7;
 }
 
-/* villa carlos paz */
+/* VILLA CARLOS PAZ */
 
 .vcp-main-header-container {
     background: url('/assets/tu-imagen-de-fondo.jpg') no-repeat center center;
