@@ -67,6 +67,20 @@ header {
     padding: 10px 15px;
     font-size: 22px;
 }
+header button {
+    background:#24bad4;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.5s;
+}
+header button:hover {
+    background: #14b8a6;
+    border: solid 2px #24bad4;
+}
 
 /* FOOTER */
 
@@ -499,6 +513,182 @@ header {
     margin-bottom: 10px;
     color: #334155;
     line-height: 1.6;
+}
+
+
+
+/* VILLA CARLOS PAZ */
+
+.vcp-main-header-container {
+    background: url('/assets/tu-imagen-de-fondo.jpg') no-repeat center center;
+    background-size: cover;
+    padding: 20px;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    width: 100%;
+}
+
+.vcp-main-header {
+    font-size: 2rem;
+    color: #20c997;
+    margin: 0;
+}
+
+.vcp-main-header-container p {
+    font-size: 1rem;
+    color: white;
+    margin: 5px 0 0;
+}
+
+
+.vcp-mapa-info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    align-items: stretch;
+}
+
+.vcp-mapa-info iframe {
+    flex: 1 1 45%;
+    border: none;
+}
+
+.vcp-ubicacion-horario {
+    flex: 1;
+    min-width: 300px;
+    padding: 10px;
+    background-color: #f7fcfc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+
+.vcp-icono-banner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 40px 20px;
+    background-color: #e6f7f7;
+    border-radius: 12px;
+    margin: 40px auto;
+    max-width: 1200px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+}
+
+.vcp-icono-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    gap: 15px;
+    max-width: 50%;
+}
+
+.vcp-icono-img {
+    width: 130px;
+    height: 130px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #20c997;
+}
+
+.vcp-hogar-titulo {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #20c997;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 10px 0 0 0;
+}
+
+.vcp-banner-img {
+    max-width: 50%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.08);
+}
+
+
+.vcp-ultimo-bloque {
+    text-align: center;
+    padding: 20px;
+}
+
+.vcp-ultimo-bloque h1 {
+    font-size: 2rem;
+    color: #20c997;
+}
+
+.vcp-ultimo-bloque p {
+    font-size: 1rem;
+    color: #555;
+}
+
+
+.vcp-servicios-section {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.vcp-servicios-section img {
+    width: 60%;
+    max-width: 600px;
+    height: auto;
+    flex: 1 1 60%;
+    border-radius: 10px;
+}
+
+.vcp-servicios-lista {
+    flex: 1 1 35%;
+    min-width: 280px;
+}
+
+.vcp-servicios-lista ul {
+    list-style: none;
+    padding: 0;
+}
+
+.vcp-servicios-lista li {
+    background: #e6f7f7;
+    margin-bottom: 10px;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.vcp-servicios-lista li>p,
+.vcp-servicios-lista li ul {
+    display: none;
+    margin-top: 5px;
+}
+
+.vcp-servicios-lista li.abierto>p,
+.vcp-servicios-lista li.abierto>ul {
+    display: block;
+}
+
+
+.vcp-financiamiento-comodidad {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+.vcp-financiamiento-comodidad>div {
+    flex: 1 1 45%;
+    background: #e6f7f7;
+    padding: 20px;
+    border-radius: 10px;
 }
 
 
@@ -1054,176 +1244,3 @@ textarea:focus {
 
 
 
-/* VILLA CARLOS PAZ */
-
-.vcp-main-header-container {
-    background: url('/assets/tu-imagen-de-fondo.jpg') no-repeat center center;
-    background-size: cover;
-    padding: 20px;
-    height: 80px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    color: white;
-    width: 100%;
-}
-
-.vcp-main-header {
-    font-size: 2rem;
-    color: #20c997;
-    margin: 0;
-}
-
-.vcp-main-header-container p {
-    font-size: 1rem;
-    color: white;
-    margin: 5px 0 0;
-}
-
-
-.vcp-mapa-info {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    padding: 20px;
-    align-items: stretch;
-}
-
-.vcp-mapa-info iframe {
-    flex: 1 1 45%;
-    border: none;
-}
-
-.vcp-ubicacion-horario {
-    flex: 1;
-    min-width: 300px;
-    padding: 10px;
-    background-color: #f7fcfc;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
-}
-
-
-.vcp-icono-banner {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 40px;
-    padding: 40px 20px;
-    background-color: #e6f7f7;
-    border-radius: 12px;
-    margin: 40px auto;
-    max-width: 1200px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
-}
-
-.vcp-icono-info {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    text-align: left;
-    gap: 15px;
-    max-width: 50%;
-}
-
-.vcp-icono-img {
-    width: 130px;
-    height: 130px;
-    object-fit: cover;
-    border-radius: 50%;
-    border: 4px solid #20c997;
-}
-
-.vcp-hogar-titulo {
-    font-size: 2rem;
-    font-weight: bold;
-    color: #20c997;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    margin: 10px 0 0 0;
-}
-
-.vcp-banner-img {
-    max-width: 50%;
-    height: auto;
-    border-radius: 12px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.08);
-}
-
-
-.vcp-ultimo-bloque {
-    text-align: center;
-    padding: 20px;
-}
-
-.vcp-ultimo-bloque h1 {
-    font-size: 2rem;
-    color: #20c997;
-}
-
-.vcp-ultimo-bloque p {
-    font-size: 1rem;
-    color: #555;
-}
-
-
-.vcp-servicios-section {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 20px;
-    gap: 20px;
-    align-items: flex-start;
-}
-
-.vcp-servicios-section img {
-    width: 60%;
-    max-width: 600px;
-    height: auto;
-    flex: 1 1 60%;
-    border-radius: 10px;
-}
-
-.vcp-servicios-lista {
-    flex: 1 1 35%;
-    min-width: 280px;
-}
-
-.vcp-servicios-lista ul {
-    list-style: none;
-    padding: 0;
-}
-
-.vcp-servicios-lista li {
-    background: #e6f7f7;
-    margin-bottom: 10px;
-    padding: 10px;
-    cursor: pointer;
-    border-radius: 5px;
-}
-
-.vcp-servicios-lista li>p,
-.vcp-servicios-lista li ul {
-    display: none;
-    margin-top: 5px;
-}
-
-.vcp-servicios-lista li.abierto>p,
-.vcp-servicios-lista li.abierto>ul {
-    display: block;
-}
-
-
-.vcp-financiamiento-comodidad {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    padding: 20px;
-}
-
-.vcp-financiamiento-comodidad>div {
-    flex: 1 1 45%;
-    background: #e6f7f7;
-    padding: 20px;
-    border-radius: 10px;
-}
