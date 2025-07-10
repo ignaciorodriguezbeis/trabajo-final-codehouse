@@ -350,14 +350,31 @@ header {
     color: #1e293b;
 }
 
-.ct-main-content {
+.ct-main {
     max-width: 1360px;
     margin: 0 auto;
     padding: 2rem 1rem;
 
 }
 
-.ct-main-content h1 {
+.ct-main section {
+    background: #e0f2fe;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid #bae6fd;
+    border-radius: 10px;
+    padding: 25px;
+    margin: 30px;
+}
+
+.ct-info-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 70px;
+    align-items: flex-start;
+}
+
+.ct-main h1 {
     font-size: 1.75rem;
     font-weight: 700;
     color: #0f766e;
@@ -366,61 +383,35 @@ header {
     padding-bottom: 0.5rem;
 }
 
-.ct-section-header,
-.ct-about-section-header {
-    font-size: 1.75rem;
-    font-weight: 700;
-    color: #2563eb;
-    margin-bottom: 1rem;
-}
-
-.ct-subsection-header {
-    font-size: 1.25rem;
-    font-weight: 600;
-    margin-top: 2rem;
-    margin-bottom: 0.75rem;
-    color: #0e7490;
-}
-
-.ct-paragraph {
-    margin-bottom: 1rem;
-    color: #334155;
-    line-height: 1.6;
-}
-
-.ct-list {
+.ct-main ul {
     margin: 1rem 0;
     padding-left: 1.5rem;
     list-style-type: disc;
     color: #475569;
 }
 
-.ct-list-item {
+.ct-main ul li {
     margin-bottom: 0.5rem;
 }
 
+/* ubicacion y horarios */
 
-.ct-main-content a {
+.ct-info-section h2 {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: #23586d;
+    margin-bottom: 10px;
+}
+
+.ct-main a {
     color: #0284c7;
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
-.ct-main-content a:hover {
-    color: #0369a1;
+.ct-main a:hover {
+    color: #0400ff;
     text-decoration: underline;
-}
-
-.ct-info-section article {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2rem;
-    margin: 5px;
-    align-items: flex-start;
-    background: #e0f2fe;
-    border-radius: 10px;
-    padding: 20px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 .ct-info-text {
@@ -446,40 +437,35 @@ header {
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
-.ct-image {
+/* descripcion y equipo */
+
+.ct-about-section h2 {
+    font-size: 40px;
+    font-weight: 700;
+    color: #156bdb;
+    margin: 10px;
+}
+
+.ct-about-section img {
     display: block;
-    margin: 2rem auto;
+    margin: 20px auto;
     max-width: 100%;
     border-radius: 0.5rem;
     border: 2px solid #60a5fa;
     object-fit: cover;
     flex-shrink: 0;
+    width: 50%;
+    height: 600px;
 }
 
-.ct-about-section {
-    margin-top: 3rem;
-    background-color: #e0f2fe;
-    padding: 2rem;
-    border-radius: 0.75rem;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-}
-
-.ct-about-content {
+.ct-about-section article {
     display: flex;
     gap: 1rem;
     flex-wrap: wrap;
     align-items: stretch;
 }
 
-.ct-image {
-    max-width: 500px;
-    width: 50%;
-    border-radius: 0.5rem;
-    object-fit: cover;
-    flex-shrink: 0;
-}
-
-.ct-about-text {
+.ct-about-section div {
     flex: 1 1 45%;
     min-width: 280px;
     display: flex;
@@ -487,14 +473,34 @@ header {
     justify-content: center;
 }
 
-.ct-billing-section {
-    margin-top: 2rem;
-    background-color: #e0f2fe;
-    padding: 1.5rem;
-    border-radius: 0.5rem;
-    border: 1px solid #bae6fd;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+.ct-about-section h3 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #0e7490;
+    margin-bottom: 10px;
 }
+
+.ct-about-section p {
+    color: #334155;
+    line-height: 1;
+    margin-bottom: 10px;
+}
+
+/* sección de facturación */
+
+.ct-billing-section h3 {
+    font-size: 24px;
+    margin-top: 10px;
+    margin-bottom: 0.75rem;
+    color: #0e7490;
+}
+
+.ct-billing-section p {
+    margin-bottom: 10px;
+    color: #334155;
+    line-height: 1.6;
+}
+
 
 
 /* PERFIL */
