@@ -552,57 +552,53 @@ header button:hover {
     margin: 5px 0 0;
 }
 
-.vcp-main-content {
 
-}
-
-/*
-.vcp-mapa-info {
+.vcp-maps {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
-    padding: 20px;
     align-items: stretch;
+    border-radius: 10px;
+    padding: 0px;
+    box-shadow: 0 0 10px rgba(14, 8, 8, 0.05);
 }
 
-.vcp-mapa-info iframe {
+.vcp-maps iframe {
     flex: 1 1 45%;
     border: none;
 }
 
-.vcp-ubicacion-horario {
+.vcp-info {
     flex: 1;
     min-width: 300px;
     padding: 10px;
-    background-color: #f7fcfc;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    background-color: #f0f9ff;
+    box-shadow: 0 0 10px rgba(14, 8, 8, 0.05);
+}
+.vcp-info h2 {
+    font-size: 1.5rem;
+    color: #20c997;
+    margin-bottom: 10px;
 }
 
+.vcp-info p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 10px;
+}
 
-.vcp-icono-banner {
+.vcp-icono {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 40px;
-    padding: 40px 20px;
-    background-color: #e6f7f7;
-    border-radius: 12px;
-    margin: 40px auto;
-    max-width: 1200px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+    gap: 20px;
+    padding: 20px;
+    background-color: #f0f9ff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(14, 8, 8, 0.05);
 }
 
-.vcp-icono-info {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    text-align: left;
-    gap: 15px;
-    max-width: 50%;
-}
-
-.vcp-icono-img {
+.vcp-icono img {
     width: 130px;
     height: 130px;
     object-fit: cover;
@@ -610,8 +606,8 @@ header button:hover {
     border: 4px solid #20c997;
 }
 
-.vcp-hogar-titulo {
-    font-size: 2rem;
+.vcp-icono h1 {
+    font-size: 46px;
     font-weight: bold;
     color: #20c997;
     text-transform: uppercase;
@@ -622,86 +618,79 @@ header button:hover {
 .vcp-banner-img {
     max-width: 50%;
     height: auto;
+    padding: 0;
     border-radius: 12px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.08);
 }
 
-
-.vcp-ultimo-bloque {
+.vcp-servicios-header {
     text-align: center;
     padding: 20px;
+    background-color: #f0f9ff;
 }
-
-.vcp-ultimo-bloque h1 {
-    font-size: 2rem;
+.vcp-servicios-header h1 {
+    font-size: 36px;
     color: #20c997;
+    margin-bottom: 10px;
 }
-
-.vcp-ultimo-bloque p {
-    font-size: 1rem;
+.vcp-servicios-header p {
+    font-size: 20px;
     color: #555;
+    margin-bottom: 20px;
 }
 
-
-.vcp-servicios-section {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 20px;
-    gap: 20px;
-    align-items: flex-start;
-}
-
-.vcp-servicios-section img {
-    width: 60%;
-    max-width: 600px;
+.vcp-servicios-img {
+    width: 50%;
     height: auto;
-    flex: 1 1 60%;
     border-radius: 10px;
-}
-
-.vcp-servicios-lista {
-    flex: 1 1 35%;
-    min-width: 280px;
-}
-
-.vcp-servicios-lista ul {
-    list-style: none;
+    box-shadow: 0 0 10px rgba(14, 8, 8, 0.05);
     padding: 0;
 }
 
-.vcp-servicios-lista li {
-    background: #e6f7f7;
-    margin-bottom: 10px;
-    padding: 10px;
-    cursor: pointer;
-    border-radius: 5px;
-}
-
-.vcp-servicios-lista li>p,
-.vcp-servicios-lista li ul {
-    display: none;
-    margin-top: 5px;
-}
-
-.vcp-servicios-lista li.abierto>p,
-.vcp-servicios-lista li.abierto>ul {
-    display: block;
-}
-
-
-.vcp-financiamiento-comodidad {
+.vcp-servicios {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
-    padding: 20px;
+    padding: 0;
+    align-items: flex-start;
+    background-color: #f0f9ff;
 }
 
-.vcp-financiamiento-comodidad>div {
-    flex: 1 1 45%;
-    background: #e6f7f7;
-    padding: 20px;
-    border-radius: 10px;
-} */
+.vcp-servicios li {
+    font-size: 24px;
+    color: #20c997;
+    margin-bottom: 10px;
+}
+.vcp-servicios li:hover {
+    color: #0a095a;
+    cursor: pointer;
+}
+.vcp-servicios li p {
+    font-size: 16px;
+    color: #334155;
+    margin: 0;
+}
+
+.vcp-comodidades-financiamiento {
+    width: 45%;
+   padding: 20px;
+   margin: 35px;
+   background-color: #d7f3e8;
+   border: #059669 solid 2px;
+   border-radius: 10px;
+   box-shadow: 3px 0 10px rgba(0, 0, 0, 0.05);
+}
+
+.vcp-comodidades-financiamiento h1 {
+    font-size: 36px;
+    color: #0a095a;
+    margin-bottom: 10px;
+} 
+.vcp-comodidades-financiamiento p {
+    font-size: 20px;
+    color: #555;
+    margin-bottom: 20px;
+}
 
 
 
