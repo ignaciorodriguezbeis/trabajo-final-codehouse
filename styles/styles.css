@@ -67,8 +67,9 @@ header {
     padding: 10px 15px;
     font-size: 22px;
 }
+
 header button {
-    background:#24bad4;
+    background: #24bad4;
     color: white;
     border: none;
     padding: 10px 20px;
@@ -77,6 +78,7 @@ header button {
     cursor: pointer;
     transition: background-color 0.5s;
 }
+
 header button:hover {
     background: #14b8a6;
     border: solid 2px #24bad4;
@@ -518,8 +520,15 @@ header button:hover {
 
 
 /* VILLA CARLOS PAZ */
+.vcp-main {
+    height: 100%;
+    max-width: 1450px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #ebf1ff;
+}
 
-.vcp-main-header-container {
+.vcp-main-header {
     background: url('/assets/tu-imagen-de-fondo.jpg') no-repeat center center;
     background-size: cover;
     padding: 20px;
@@ -528,23 +537,26 @@ header button:hover {
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    color: white;
     width: 100%;
 }
 
-.vcp-main-header {
+.vcp-main-header h1 {
     font-size: 2rem;
     color: #20c997;
     margin: 0;
 }
 
-.vcp-main-header-container p {
+.vcp-main-header p {
     font-size: 1rem;
-    color: white;
+    color: #0a095a;
     margin: 5px 0 0;
 }
 
+.vcp-main-content {
 
+}
+
+/*
 .vcp-mapa-info {
     display: flex;
     flex-wrap: wrap;
@@ -689,7 +701,7 @@ header button:hover {
     background: #e6f7f7;
     padding: 20px;
     border-radius: 10px;
-}
+} */
 
 
 
@@ -1241,6 +1253,3 @@ textarea:focus {
     outline: 2px solid #3b82f6;
     outline-offset: 2px;
 }
-
-
-
