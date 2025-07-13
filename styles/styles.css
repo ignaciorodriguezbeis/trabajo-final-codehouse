@@ -1012,24 +1012,26 @@ textarea:focus {
 
 
 /* PERFIL */
-.main-container {
+
+
+
+.main-perfil {
     max-width: 1280px;
     margin: 0 auto;
     padding: 1.5rem 1rem;
 }
-
-.grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 1.5rem;
-}
-
 
 .card {
     background: white;
     border-radius: 0.5rem;
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
     border-left: 4px solid;
+}
+
+.card-header {
+    padding: 1.5rem;
+    text-align: center;
+    background: linear-gradient(to right, #a0f7d9, #87fbea);
 }
 
 .card-patient {
@@ -1048,11 +1050,23 @@ textarea:focus {
     border-left-color: #10b981;
 }
 
-.card-header {
-    padding: 1.5rem;
-    text-align: center;
-    background: linear-gradient(to right, #a0f7d9, #87fbea);
+
+
+
+
+ 
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
 }
+
+
+
+
+
+/*
+
 
 .card-content {
     padding: 1.5rem;
@@ -1252,4 +1266,4 @@ textarea:focus {
 
 .estado-completo {
     background: linear-gradient(to right, #4ade80, #10b981);
-}
+} */

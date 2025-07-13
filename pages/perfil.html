@@ -41,70 +41,76 @@
     </header>
 
 
-    <main class="main-container">
-        <div class="grid">
-            <!-- info basica -->
-            <div>
-                <div class="card card-patient">
+    <main class="main-perfil">
+        <div class="container ">
+            <div class="row">
+
+                <!-- info basica -->
+                <div class="card-title card col-12">
                     <div class="card-header">
-                        <div class="patient-photo">
-                            <img src="/placeholder.svg?height=128&width=128" alt="Foto de perfil">
-                        </div>
-                        <h1 class="patient-name">Juan Pérez García</h1>
-                        <p class="patient-id">Paciente #12345</p>
-                    </div>
-                    <div class="card-content">
-                        <div class="patient-info">
-                            <i data-lucide="calendar" class="info-icon"></i>
-                            <div>
-                                <span>Edad: </span>
-                                <span>35 años</span>
-                            </div>
-                        </div>
-                        <div class="patient-info">
-                            <i data-lucide="phone" class="info-icon"></i>
-                            <div>
-                                <span>Teléfono: </span>
-                                <span>+34 612 345 678</span>
-                            </div>
-                        </div>
-                        <div class="patient-info">
-                            <i data-lucide="mail" class="info-icon"></i>
-                            <div>
-                                <span>Email: </span>
-                                <span>juan.perez@email.com</span>
-                            </div>
-                        </div>
-                        <div class="patient-info">
-                            <i data-lucide="building-2" class="info-icon"></i>
-                            <div>
-                                <span>Obra Social: </span>
-                                <span>Swiss Medical</span>
-                            </div>
-                        </div>
-                        <div class="patient-info">
-                            <i data-lucide="calendar" class="info-icon"></i>
-                            <div>
-                                <span>Última visita: </span>
-                                <span>15/05/2025</span>
-                            </div>
-                        </div>
-                        <div class="patient-info">
-                            <i data-lucide="calendar" class="info-icon next-appointment"></i>
-                            <div>
-                                <span>Próxima cita: </span>
-                                <span class="next-appointment-text">20/06/2025</span>
-                            </div>
-                        </div>
-                        <button class="edit-button">Editar Perfil</button>
+                        <h1>Perfil del Paciente</h1>
                     </div>
                 </div>
-            </div>
+                <!-- info basica -->
+                <div class="card-patient card col-5">
+                    <div >
+                        <div class="card-header">
+                            <div class="patient-photo">
+                                <img src="/placeholder.svg?height=128&width=128" alt="Foto de perfil">
+                            </div>
+                            <h1 class="patient-name">Juan Pérez García</h1>
+                            <p class="patient-id">Paciente #12345</p>
+                        </div>
+                        <div class="card-content">
+                            <div class="patient-info">
+                                <i data-lucide="calendar" class="info-icon"></i>
+                                <div>
+                                    <span>Edad: </span>
+                                    <span>35 años</span>
+                                </div>
+                            </div>
+                            <div class="patient-info">
+                                <i data-lucide="phone" class="info-icon"></i>
+                                <div>
+                                    <span>Teléfono: </span>
+                                    <span>+34 612 345 678</span>
+                                </div>
+                            </div>
+                            <div class="patient-info">
+                                <i data-lucide="mail" class="info-icon"></i>
+                                <div>
+                                    <span>Email: </span>
+                                    <span>juan.perez@email.com</span>
+                                </div>
+                            </div>
+                            <div class="patient-info">
+                                <i data-lucide="building-2" class="info-icon"></i>
+                                <div>
+                                    <span>Obra Social: </span>
+                                    <span>Swiss Medical</span>
+                                </div>
+                            </div>
+                            <div class="patient-info">
+                                <i data-lucide="calendar" class="info-icon"></i>
+                                <div>
+                                    <span>Última visita: </span>
+                                    <span>15/05/2025</span>
+                                </div>
+                            </div>
+                            <div class="patient-info">
+                                <i data-lucide="calendar" class="info-icon next-appointment"></i>
+                                <div>
+                                    <span>Próxima cita: </span>
+                                    <span class="next-appointment-text">20/06/2025</span>
+                                </div>
+                            </div>
+                            <button class="edit-button">Editar Perfil</button>
+                        </div>
+                    </div>
+                </div>
 
-
-            <div>
                 <!-- info medica -->
-                <div class="card card-medical">
+                <div class="card-medical card col-7">
                     <div class="card-header">
                         <h2>Información Médica</h2>
                     </div>
@@ -226,8 +232,8 @@
                     </div>
                 </div>
 
-                <!-- info tratamientoss -->
-                <div class="card card-treatments">
+                <!-- info tratamientos -->
+                <div class="card-treatments card col-12">
                     <div class="card-header">
                         <h2>Plan de Tratamiento</h2>
                         <p>Tratamientos actuales y programados</p>
@@ -273,7 +279,7 @@
                 </div>
 
                 <!-- historial -->
-                <div class="card card-history">
+                <div class="card-history card col-12">
                     <div class="card-header">
                         <h2>Historial de Tratamientos</h2>
                         <p>Registro de tratamientos completados</p>
