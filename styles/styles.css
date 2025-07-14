@@ -86,7 +86,7 @@ header button:hover {
 
 /* FOOTER */
 
-.footer {
+footer {
     background: linear-gradient(to right, #334155, #1e293b);
     color: white;
     padding: 1rem 0;
@@ -110,7 +110,7 @@ header button:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 1.5rem;
+    gap: 20px;
     font-size: 20px;
 }
 
@@ -391,12 +391,12 @@ header button:hover {
 }
 
 .ct-main h1 {
-    font-size: 1.75rem;
+    font-size: 28px;
     font-weight: 700;
     color: #0f766e;
-    margin-bottom: 1rem;
+    margin-bottom: 16px;
     border-bottom: 3px solid #0f766e;
-    padding-bottom: 0.5rem;
+    padding-bottom: 8px;
 }
 
 .ct-main ul {
@@ -447,7 +447,6 @@ header button:hover {
 .ct-map iframe {
     width: 100%;
     height: 100%;
-    min-height: 400px;
     border-radius: 10px;
     border: 1px solid #cbd5e1;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
@@ -1407,12 +1406,21 @@ textarea:focus {
         margin: 0;
     }
 
-    .footer-contacts {
-        flex-direction: column;
-        gap: 10px;
-    }
+   footer {
+    flex-direction: column;
+    margin-top: 10px;
+   }
+   
+   .footer-contacts {
+    font-size:12px;
+    gap: 5px;
+    flex-direction: column;
 
+   }
 
+   .footer-copyright p {
+    margin-bottom: 0;
+   }
 
     /* HOME */
 
@@ -1500,8 +1508,46 @@ textarea:focus {
 
 
     /* COLONIA TIROLESA */
+    .ct-main{
+        padding: 10px 5px;
+    }
+    .ct-main section{
+        margin: 0;
+        padding: 10px;
+        gap: 10px;
+    }
+
+    .ct-main h1, .ct-main h2 {
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    .ct-info-section {
+        flex-direction: column;
+    }
+
+    .ct-info-section p, .ct-info-section ul {
+        font-size: 12px;
+    }
+
+    .ct-map{
+        width: 300px;
+        margin: 12px;
+    }
 
 
-    
+    .ct-about-section img {
+        margin: 0;
+        width: 100%;
+        height: auto;
+    }
 
+    .ct-about-section h3, .ct-billing-section h3 {
+        font-size: 18px;
+
+    }
+
+    .ct-about-section p, .ct-about-section li, .ct-billing-section p {
+        font-size: 12px;
+    }
 }
