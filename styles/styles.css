@@ -1406,21 +1406,21 @@ textarea:focus {
         margin: 0;
     }
 
-   footer {
-    flex-direction: column;
-    margin-top: 10px;
-   }
-   
-   .footer-contacts {
-    font-size:12px;
-    gap: 5px;
-    flex-direction: column;
+    footer {
+        flex-direction: column;
+        margin-top: 10px;
+    }
 
-   }
+    .footer-contacts {
+        font-size: 12px;
+        gap: 5px;
+        flex-direction: column;
 
-   .footer-copyright p {
-    margin-bottom: 0;
-   }
+    }
+
+    .footer-copyright p {
+        margin-bottom: 0;
+    }
 
     /* HOME */
 
@@ -1508,16 +1508,18 @@ textarea:focus {
 
 
     /* COLONIA TIROLESA */
-    .ct-main{
+    .ct-main {
         padding: 10px 5px;
     }
-    .ct-main section{
+
+    .ct-main section {
         margin: 0;
         padding: 10px;
         gap: 10px;
     }
 
-    .ct-main h1, .ct-main h2 {
+    .ct-main h1,
+    .ct-main h2 {
         font-size: 20px;
         font-weight: 600;
     }
@@ -1526,11 +1528,12 @@ textarea:focus {
         flex-direction: column;
     }
 
-    .ct-info-section p, .ct-info-section ul {
+    .ct-info-section p,
+    .ct-info-section ul {
         font-size: 12px;
     }
 
-    .ct-map{
+    .ct-map {
         width: 300px;
         margin: 12px;
     }
@@ -1542,12 +1545,15 @@ textarea:focus {
         height: auto;
     }
 
-    .ct-about-section h3, .ct-billing-section h3 {
+    .ct-about-section h3,
+    .ct-billing-section h3 {
         font-size: 18px;
 
     }
 
-    .ct-about-section p, .ct-about-section li, .ct-billing-section p {
+    .ct-about-section p,
+    .ct-about-section li,
+    .ct-billing-section p {
         font-size: 12px;
     }
 }
