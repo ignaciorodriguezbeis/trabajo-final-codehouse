@@ -1,0 +1,17 @@
+// BASE
+
+@use "./partials/base/reset";
+@use "./partials/base/tipografia";
+
+// COMPONENTS
+
+@use "./partials/components/header";
+@use "./partials/components/footer";
+@use "./partials/components/home";
+@use "./partials/components/ct";
+@use "./partials/components/vcp";
+@use "./partials/components/acceso";
+@use "./partials/components/perfil";
+
+// UTILITIES
+
