@@ -1,4 +1,5 @@
-.home-main-container {
+
+.home-main {
     max-width: 90%;
     background-color: #c4ebfa;
     margin: 0 auto;
@@ -6,7 +7,7 @@
     border-radius: 10px;
 }
 
-.home-header-container {
+.home-header {
     background-image: url('/assets/tipos-de-sonrisa-1.jpg');
     background-size: cover;
     background-repeat: no-repeat;
@@ -17,55 +18,55 @@
     height: 600px;
     max-width: 130%;
     border-radius: 10px;
-}
 
-.home-header-container img {
-    position: absolute;
-    top: 200px;
-    left: 31%;
-    border-radius: 50%;
-    height: 120px;
-    width: 120px;
-    display: flex;
-    align-items: center;
-    background: transparent;
-}
 
-.home-header-container div {
-    color: whitesmoke;
-    font-size: 2.5rem;
-    font-weight: bold;
-    text-shadow: 2px 2px 4px #0a095a;
-    margin-top: 20px;
-    background: rgba(114, 114, 114, 0.3);
-    height: 200px;
-    width: 40%;
-    border-radius: 2rem;
-    position: absolute;
-    top: 135px;
-    left: 30%;
-    padding-left: 120px;
-}
+    img {
+        position: absolute;
+        top: 200px;
+        left: 31%;
+        border-radius: 50%;
+        height: 120px;
+        width: 120px;
+        display: flex;
+        align-items: center;
+        background: transparent;
+    }
 
-.home-header-container div h1 {
-    color: #00c6a7;
-    display: inline-block;
-    padding: 15px 30px;
-    border-radius: 10px;
-    font-size: 40px;
-}
+    div {
+        color: whitesmoke;
+        font-size: 2.5rem;
+        font-weight: bold;
+        text-shadow: 2px 2px 4px #0a095a;
+        margin-top: 20px;
+        background: rgba(114, 114, 114, 0.3);
+        height: 200px;
+        width: 40%;
+        border-radius: 2rem;
+        position: absolute;
+        top: 135px;
+        left: 30%;
+        padding-left: 120px;
 
-.home-header-container div p {
-    color: #ffffff;
-    margin-top: 10px;
-    font-size: 22px;
-    font-weight: 500;
-    padding: 10px 20px;
+        h1 {
+            color: #00c6a7;
+            display: inline-block;
+            padding: 15px 30px;
+            border-radius: 10px;
+            font-size: 40px;
+        }
+
+        p {
+            color: #ffffff;
+            margin-top: 10px;
+            font-size: 22px;
+            font-weight: 500;
+            padding: 10px 20px;
+        }
+    }
 }
 
 /* Tratamientos */
-.home-tratamientos-container {
-
+.home-tratamientos {
     border-radius: 10px;
     padding: 40px 20px;
     text-align: center;
@@ -75,39 +76,39 @@
     gap: 20px;
     max-width: 80%;
     margin: 0 auto;
-}
 
-.home-tratamientos-container h2 {
-    width: 100%;
-    font-size: 34px;
-    margin-bottom: 30px;
-    color: #00c6a7;
-    text-shadow: 2px 2px 4px #1e1c8f;
-    background: #effaff;
-    padding: 10px 20px;
-    border-radius: 10px;
-}
+    h2 {
+        width: 100%;
+        font-size: 34px;
+        margin-bottom: 30px;
+        color: #00c6a7;
+        text-shadow: 2px 2px 4px #1e1c8f;
+        background: #effaff;
+        padding: 10px 20px;
+        border-radius: 10px;
+    }
 
-.home-tratamientos-container article {
-    display: grid;
-    grid-template-columns: repeat(4, 250px);
-    grid-template-rows: repeat(2, 250px);
-    grid-area: auto;
-    background-color: #f0f9ff;
-    gap: 30px;
-    padding: 20px;
-    border-radius: 10px;
+    article {
+        display: grid;
+        grid-template-columns: repeat(4, 250px);
+        grid-template-rows: repeat(2, 250px);
+        grid-area: auto;
+        background-color: #f0f9ff;
+        gap: 30px;
+        padding: 20px;
+        border-radius: 10px;
 
-}
+    }
 
-.home-tratamientos-container div h3 {
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 5px 10px;
-    border-radius: 5px;
-    font-size: 1.2rem;
-    text-align: center;
-    color: white;
-    margin-top: 70%;
+    h3 {
+        background-color: rgba(0, 0, 0, 0.5);
+        padding: 5px 10px;
+        border-radius: 5px;
+        font-size: 1.2rem;
+        text-align: center;
+        color: white;
+        margin-top: 70%;
+    }
 }
 
 /* Imágenes de fondo para los tratamientos*/
@@ -185,29 +186,29 @@
     gap: 20px;
     max-width: 1200px;
     margin: 0 auto;
-}
 
-.home-consultorios h2 {
-    width: 100%;
-    font-size: 35px;
-    margin-bottom: 30px;
-    background-color: #f1fffd;
-    border-radius: 10px;
-    height: 60px;
-    width: 300px;
-    margin: 20px 200px;
-}
+    h2 {
+        width: 100%;
+        font-size: 35px;
+        margin-bottom: 30px;
+        background-color: #f1fffd;
+        border-radius: 10px;
+        height: 60px;
+        width: 300px;
+        margin: 20px 200px;
+    }
 
-.home-consultorios div {
-    background-color: #d8ffff;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    text-align: left;
-    width: 550px;
-    font-size: 20px;
-}
+    div {
+        background-color: #d8ffff;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        text-align: left;
+        width: 550px;
+        font-size: 20px;
 
-.home-consultorios div ul {
-    list-style: none;
+        ul {
+            list-style: none;
+        }
+    }
 }

@@ -6,6 +6,12 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: "Noto Sans", sans-serif;
+  background: linear-gradient(to bottom right, #f8fafc, #f1f5f9);
+  min-height: 100vh;
+}
+
 /* font-family: 'Noto Sans'; */
 header {
   background: linear-gradient(to right, #06b6d4, #14b8a6);
@@ -114,7 +120,7 @@ footer section article {
   color: #9ca3af;
 }
 
-.home-main-container {
+.home-main {
   max-width: 90%;
   background-color: #c4ebfa;
   margin: 0 auto;
@@ -122,7 +128,7 @@ footer section article {
   border-radius: 10px;
 }
 
-.home-header-container {
+.home-header {
   background-image: url("/assets/tipos-de-sonrisa-1.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -134,8 +140,7 @@ footer section article {
   max-width: 130%;
   border-radius: 10px;
 }
-
-.home-header-container img {
+.home-header img {
   position: absolute;
   top: 200px;
   left: 31%;
@@ -146,8 +151,7 @@ footer section article {
   align-items: center;
   background: transparent;
 }
-
-.home-header-container div {
+.home-header div {
   color: whitesmoke;
   font-size: 2.5rem;
   font-weight: bold;
@@ -162,16 +166,14 @@ footer section article {
   left: 30%;
   padding-left: 120px;
 }
-
-.home-header-container div h1 {
+.home-header div h1 {
   color: #00c6a7;
   display: inline-block;
   padding: 15px 30px;
   border-radius: 10px;
   font-size: 40px;
 }
-
-.home-header-container div p {
+.home-header div p {
   color: #ffffff;
   margin-top: 10px;
   font-size: 22px;
@@ -180,7 +182,7 @@ footer section article {
 }
 
 /* Tratamientos */
-.home-tratamientos-container {
+.home-tratamientos {
   border-radius: 10px;
   padding: 40px 20px;
   text-align: center;
@@ -191,8 +193,7 @@ footer section article {
   max-width: 80%;
   margin: 0 auto;
 }
-
-.home-tratamientos-container h2 {
+.home-tratamientos h2 {
   width: 100%;
   font-size: 34px;
   margin-bottom: 30px;
@@ -202,8 +203,7 @@ footer section article {
   padding: 10px 20px;
   border-radius: 10px;
 }
-
-.home-tratamientos-container article {
+.home-tratamientos article {
   display: grid;
   grid-template-columns: repeat(4, 250px);
   grid-template-rows: repeat(2, 250px);
@@ -213,8 +213,7 @@ footer section article {
   padding: 20px;
   border-radius: 10px;
 }
-
-.home-tratamientos-container div h3 {
+.home-tratamientos h3 {
   background-color: rgba(0, 0, 0, 0.5);
   padding: 5px 10px;
   border-radius: 5px;
@@ -300,7 +299,6 @@ footer section article {
   max-width: 1200px;
   margin: 0 auto;
 }
-
 .home-consultorios h2 {
   width: 100%;
   font-size: 35px;
@@ -311,7 +309,6 @@ footer section article {
   width: 300px;
   margin: 20px 200px;
 }
-
 .home-consultorios div {
   background-color: #d8ffff;
   border-radius: 10px;
@@ -321,7 +318,6 @@ footer section article {
   width: 550px;
   font-size: 20px;
 }
-
 .home-consultorios div ul {
   list-style: none;
 }
@@ -336,7 +332,6 @@ footer section article {
   margin: 0 auto;
   padding: 2rem 1rem;
 }
-
 .ct-main section {
   background: #e0f2fe;
   padding: 20px;
@@ -346,14 +341,6 @@ footer section article {
   padding: 25px;
   margin: 30px;
 }
-
-.ct-info-section {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 70px;
-  align-items: flex-start;
-}
-
 .ct-main h1 {
   font-size: 28px;
   font-weight: 700;
@@ -362,16 +349,30 @@ footer section article {
   border-bottom: 3px solid #0f766e;
   padding-bottom: 8px;
 }
-
+.ct-main .ct-main a {
+  color: #0284c7;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+.ct-main .ct-main a:hover {
+  color: #0400ff;
+  text-decoration: underline;
+}
 .ct-main ul {
   margin: 1rem 0;
   padding-left: 1.5rem;
   list-style-type: disc;
   color: #475569;
 }
-
 .ct-main ul li {
   margin-bottom: 0.5rem;
+}
+
+.ct-info-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 70px;
+  align-items: flex-start;
 }
 
 /* ubicacion y horarios */
@@ -381,19 +382,7 @@ footer section article {
   color: #23586d;
   margin-bottom: 10px;
 }
-
-.ct-main a {
-  color: #0284c7;
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
-
-.ct-main a:hover {
-  color: #0400ff;
-  text-decoration: underline;
-}
-
-.ct-info-text {
+.ct-info-section article {
   flex: 1;
   min-width: 280px;
 }
@@ -406,7 +395,6 @@ footer section article {
   align-items: center;
   margin: 20px 20px 0 0;
 }
-
 .ct-map iframe {
   width: 100%;
   height: 100%;
@@ -422,7 +410,6 @@ footer section article {
   color: #156bdb;
   margin: 10px;
 }
-
 .ct-about-section img {
   display: block;
   margin: 20px auto;
@@ -434,14 +421,12 @@ footer section article {
   width: 50%;
   height: 600px;
 }
-
 .ct-about-section article {
   display: flex;
   gap: 1rem;
   flex-wrap: wrap;
   align-items: stretch;
 }
-
 .ct-about-section div {
   flex: 1 1 45%;
   min-width: 280px;
@@ -449,14 +434,12 @@ footer section article {
   flex-direction: column;
   justify-content: center;
 }
-
 .ct-about-section h3 {
   font-size: 24px;
   font-weight: 600;
   color: #0e7490;
   margin-bottom: 10px;
 }
-
 .ct-about-section p {
   color: #334155;
   line-height: 1;
@@ -470,7 +453,6 @@ footer section article {
   margin-bottom: 0.75rem;
   color: #0e7490;
 }
-
 .ct-billing-section p {
   margin-bottom: 10px;
   color: #334155;
