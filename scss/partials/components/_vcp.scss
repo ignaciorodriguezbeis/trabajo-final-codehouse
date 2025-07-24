@@ -1,10 +1,10 @@
 
-.vcp-main {
-    height: 100%;
-    max-width: 1450px;
+.home-main {
+    max-width: 90%;
+    background-color: #c4ebfa;
     margin: 0 auto;
     padding: 20px;
-    background: #ebf1ff;
+    border-radius: 10px;
 }
 
 .vcp-main-header {
@@ -17,17 +17,18 @@
     justify-content: center;
     text-align: center;
     width: 100%;
+    margin: 10px;
 
     h1 {
-        font-size: 30px;
+        font-size: 46px;
         color: #20c997;
-        margin: 0;
+        margin: 5px;
     }
 
     p {
-        font-size: 1rem;
+        font-size: 24px;
         color: #0a095a;
-        margin: 5px 0 0;
+        margin: 5px;
     }
 }
 
@@ -54,7 +55,7 @@
     box-shadow: 0 0 10px rgba(14, 8, 8, 0.05);
 
     h2 {
-        font-size: 1.5rem;
+        font-size: 24px;
         color: #20c997;
         margin-bottom: 10px;
     }
