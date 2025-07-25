@@ -13,7 +13,7 @@ footer {
         article {
             display: flex;
             flex-direction: column;
-            gap: 0.5rem;
+            gap: 10px;
         }
     }
 }
@@ -55,4 +55,48 @@ footer {
     font-size: 14px;
     color: #9ca3af;
     text-align: center;
+
+    &:hover {
+        color: #0564f1;
+    }
+}
+
+
+
+// RESPONSIVE
+
+@media(max-width: 480px) {
+
+    footer {
+        flex-direction: column;
+        margin-top: 5px;
+
+        section {
+            article {
+                gap: 5px;
+            }
+        }
+    }
+
+    .footer-contacts {
+        font-size: 12px;
+        gap: 5px;
+        flex-direction: column;
+
+    }
+
+    .footer-social {
+        gap: 40px;
+
+        img {
+            height: 18px;
+            width: 17px;
+        }
+
+    }
+
+    .footer-copyright p {
+        font-size: 8px;
+        margin-bottom: 0;
+    }
 }

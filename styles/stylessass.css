@@ -20,12 +20,9 @@ header {
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 header section {
-  max-width: 100%;
-  margin: 0 auto;
+  margin: 5px auto;
   padding: 5px 5px;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
 header section article {
   display: flex;
@@ -70,6 +67,38 @@ header section button:hover {
   border: solid 2px #24bad4;
 }
 
+@media (max-width: 480px) {
+  header section article a span {
+    font-size: 16px;
+    padding: 8px 5px;
+  }
+  header section article a img {
+    height: 40px;
+    width: 40px;
+    margin-right: 5px;
+    margin-left: 0;
+  }
+  header section nav {
+    gap: 10px;
+  }
+  header section nav a {
+    font-size: 10px;
+    padding: 5px;
+  }
+  header section div nav {
+    gap: 5px;
+  }
+  header section div nav button {
+    font-size: 10px;
+    padding: 5px;
+  }
+  header section div nav img {
+    height: 30px;
+    width: 30px;
+    padding: 0;
+    margin: 0;
+  }
+}
 footer {
   background: linear-gradient(to right, #334155, #1e293b);
   color: white;
@@ -85,7 +114,7 @@ footer section {
 footer section article {
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
+  gap: 10px;
 }
 
 .footer-contacts {
@@ -122,9 +151,37 @@ footer section article {
   color: #9ca3af;
   text-align: center;
 }
+.footer-copyright:hover {
+  color: #0564f1;
+}
 
+@media (max-width: 480px) {
+  footer {
+    flex-direction: column;
+    margin-top: 5px;
+  }
+  footer section article {
+    gap: 5px;
+  }
+  .footer-contacts {
+    font-size: 12px;
+    gap: 5px;
+    flex-direction: column;
+  }
+  .footer-social {
+    gap: 40px;
+  }
+  .footer-social img {
+    height: 18px;
+    width: 17px;
+  }
+  .footer-copyright p {
+    font-size: 8px;
+    margin-bottom: 0;
+  }
+}
 .home-main {
-  max-width: 90%;
+  max-width: 92%;
   background-color: #c4ebfa;
   margin: 0 auto;
   padding: 20px;
@@ -325,6 +382,73 @@ footer section article {
   list-style: none;
 }
 
+@media (max-width: 480px) {
+  .home-main {
+    display: block;
+    flex-direction: column;
+    max-width: 100%;
+  }
+  .home-header {
+    height: 200px;
+  }
+  .home-header img {
+    height: 50px;
+    width: 50px;
+    top: auto;
+    left: auto;
+  }
+  .home-header div {
+    width: 90%;
+    height: 150px;
+    top: 0;
+    left: auto;
+    padding-left: 30px;
+  }
+  .home-header div h1 {
+    font-size: 24px;
+    padding: 5px 10px;
+  }
+  .home-header div p {
+    font-size: 16px;
+    padding: 5px 10px;
+  }
+  .home-tratamientos {
+    padding: 5px;
+    max-width: 100%;
+    flex-direction: column;
+  }
+  .home-tratamientos h2 {
+    font-size: 22px;
+    padding: 5px 10px;
+    margin-bottom: 0;
+    text-shadow: none;
+  }
+  .home-tratamientos article {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(4, 1fr);
+  }
+  .home-tratamientos article h3 {
+    font-size: 12px;
+  }
+  .home-consultorios {
+    padding: 5px;
+  }
+  .home-consultorios h2 {
+    font-size: 24px;
+    padding: 8px;
+    margin: auto;
+  }
+  .home-consultorios div {
+    padding: 5px;
+  }
+  .home-consultorios div h3 {
+    font-size: 20px;
+  }
+  .home-consultorios div ul {
+    padding: 10px;
+    font-size: 16px;
+  }
+}
 .ct-body {
   background-color: #f7fafc;
   color: #1e293b;
@@ -462,7 +586,51 @@ footer section article {
   line-height: 1.6;
 }
 
-.home-main {
+@media (max-width: 480px) {
+  .ct-main {
+    padding: 10px 5px;
+  }
+  .ct-main section {
+    margin: 0;
+    padding: 10px;
+    gap: 10px;
+  }
+  .ct-main h1,
+  .ct-main h2 {
+    font-size: 20px;
+    font-weight: 600;
+  }
+  .ct-info-section {
+    flex-direction: column;
+  }
+  .ct-info-section p,
+  .ct-info-section ul {
+    font-size: 12px;
+  }
+  .ct-map {
+    width: 300px;
+    margin: 12px;
+  }
+  .ct-about-section img {
+    margin: 0;
+    width: 100%;
+    height: auto;
+  }
+  .ct-about-section h3 {
+    font-size: 18px;
+  }
+  .ct-about-section li,
+  .ct-about-section p {
+    font-size: 12px;
+  }
+  .ct-billing-section h3 {
+    font-size: 18px;
+  }
+  .ct-billing-section p {
+    font-size: 12px;
+  }
+}
+.vcp-main {
   max-width: 90%;
   background-color: #c4ebfa;
   margin: 0 auto;
@@ -486,11 +654,13 @@ footer section article {
   font-size: 46px;
   color: #20c997;
   margin: 5px;
+  font-weight: 700;
 }
 .vcp-main-header p {
   font-size: 24px;
   color: #0a095a;
-  margin: 5px;
+  margin: 5px 0 8px 0;
+  font-weight: 700;
 }
 
 .vcp-maps {
@@ -595,6 +765,7 @@ footer section article {
   font-size: 24px;
   color: #20c997;
   margin-bottom: 10px;
+  list-style: none;
 }
 .vcp-servicios li:hover {
   color: #0a095a;
@@ -626,11 +797,102 @@ footer section article {
   margin-bottom: 20px;
 }
 
+@media (max-width: 480px) {
+  .vcp-main {
+    padding: 10px;
+  }
+  .vcp-main-header h1 {
+    font-size: 30px;
+  }
+  .vcp-main-header p {
+    font-size: 16px;
+  }
+  .vcp-maps {
+    gap: 0;
+    align-items: center;
+    height: 300px;
+    width: auto;
+  }
+  .vcp-info h2 {
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+  .vcp-info p {
+    font-size: 12px;
+    margin-bottom: 5px;
+  }
+  .vcp-info li {
+    font-size: 10px;
+    margin-bottom: 5px;
+  }
+  .vcp-icono {
+    width: 100%;
+    padding: 5px;
+    gap: 10px;
+  }
+  .vcp-icono img {
+    width: 80px;
+    height: 80px;
+  }
+  .vcp-icono h1 {
+    font-size: 20px;
+    margin: 0;
+  }
+  .vcp-banner-img {
+    max-width: 100%;
+    width: 100%;
+  }
+  .vcp-servicios-header {
+    padding: 5px;
+  }
+  .vcp-servicios-header h1 {
+    font-size: 24px;
+    margin-bottom: 5px;
+  }
+  .vcp-servicios-header p {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  .vcp-servicios-img {
+    width: 100%;
+  }
+  .vcp-servicios {
+    width: 100%;
+    padding: 10px;
+  }
+  .vcp-servicios ul {
+    padding: 0;
+  }
+  .vcp-servicios li {
+    font-size: 16px;
+  }
+  .vcp-servicios li p {
+    font-size: 12px;
+  }
+  .vcp-comodidades-financiamiento {
+    width: 95%;
+    padding: 10px;
+    margin: 5px;
+  }
+  .vcp-comodidades-financiamiento h1 {
+    font-size: 20px;
+  }
+  .vcp-comodidades-financiamiento p {
+    font-size: 12px;
+    margin-bottom: 10px;
+  }
+  .vcp-comodidades-financiamiento ul {
+    margin-bottom: 10px;
+  }
+  .vcp-comodidades-financiamiento li {
+    font-size: 10px;
+  }
+}
 /* INICIO */
 .login-form-container {
   background: linear-gradient(145deg, #ffffff 0%, #f8fafc 100%);
-  padding: 2.5rem;
-  border-radius: 1rem;
+  padding: 40px;
+  border-radius: 20px;
   box-shadow: 0 10px 40px rgba(71, 85, 105, 0.1);
   border: 1px solid #e2e8f0;
   height: fit-content;
@@ -638,11 +900,11 @@ footer section article {
 }
 .login-form-container h2 {
   color: #1e40af;
-  font-size: 1.5rem;
+  font-size: 24px;
   font-weight: 700;
-  margin-bottom: 2rem;
+  margin-bottom: 32px;
   border-bottom: 3px solid #dbeafe;
-  padding-bottom: 0.75rem;
+  padding-bottom: 12px;
 }
 .login-form-container label {
   font-weight: 600;
@@ -669,8 +931,8 @@ footer section article {
   background: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%);
   color: white;
   border: none;
-  padding: 1rem 2rem;
-  border-radius: 0.5rem;
+  padding: 16px 32px;
+  border-radius: 10px;
   font-weight: 600;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -714,7 +976,7 @@ footer section article {
   border: 1px solid #bfdbfe;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 1.5rem;
+  gap: 24px;
 }
 .registration-login label {
   font-weight: 600;
@@ -724,7 +986,7 @@ footer section article {
   font-size: 20px;
 }
 .registration-login input {
-  padding: 1rem;
+  padding: 16px;
   border: 2px solid #e2e8f0;
   border-radius: 10px;
   font-size: 16px;
@@ -811,9 +1073,8 @@ footer section article {
   color: #78350f;
   font-size: 20px;
   font-weight: 600;
-  margin-bottom: 16px;
+  margin: 16px 0;
   text-transform: uppercase;
-  margin-top: 10px;
 }
 .medical-history label {
   font-weight: 600;
@@ -896,11 +1157,110 @@ textarea:focus {
   outline-offset: 2px;
 }
 
+@media (max-width: 480px) {
+  .login-form-container {
+    padding: 10px 30px;
+    height: auto;
+    width: 100%;
+    flex-direction: column;
+  }
+  .login-form-container h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    padding-bottom: 6px;
+  }
+  .login-form-container label {
+    font-size: 18px;
+    margin-left: 10px;
+  }
+  .login-form-container input {
+    padding: 5px;
+  }
+  .login-form-container button {
+    font-size: 12px;
+    margin: 5px auto;
+    padding: 12px 10px;
+    width: 100px;
+  }
+  .register-container {
+    padding: 8px;
+  }
+  .register-container h1 {
+    font-size: 24px;
+    margin-bottom: 14px;
+    padding-bottom: 6px;
+  }
+  .register-container form {
+    gap: 12px;
+  }
+  .registration-login {
+    gap: 10px;
+    padding: 10px;
+  }
+  .registration-login label {
+    font-size: 14px;
+  }
+  .registration-login input {
+    font-size: 14px;
+    padding: 8px;
+  }
+  .personal-data h3 {
+    font-size: 20px;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+  }
+  .personal-data div {
+    gap: 6px;
+    margin: 4px 6px;
+  }
+  .personal-data label {
+    font-size: 14px;
+  }
+  .personal-data input {
+    font-size: 12px;
+    width: 100%;
+  }
+  .personal-data select {
+    font-size: 12px;
+  }
+  .medical-history {
+    padding: 10px;
+  }
+  .medical-history h3 {
+    font-size: 20px;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+  }
+  .medical-history h4 {
+    font-size: 18px;
+    margin: 8px 0;
+  }
+  .medical-history label {
+    font-size: 12px;
+  }
+  .extra-info {
+    flex-direction: column;
+    gap: 0;
+  }
+  .extra-info label {
+    margin-bottom: 4px;
+    font-size: 16px;
+  }
+  .extra-info textarea {
+    padding: 4px;
+    font-size: 12px;
+  }
+  .submit-button {
+    margin: 0 auto;
+    font-size: 12px;
+    padding: 8px 14px;
+  }
+}
 /* BLOQUES */
 .main-perfil {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 1.5rem 1rem;
+  padding: 24px 16px;
 }
 
 .card {
@@ -911,9 +1271,27 @@ textarea:focus {
 }
 
 .card-header {
-  padding: 1.5rem;
+  padding: 24px;
   text-align: center;
   background: linear-gradient(to right, #a0f7d9, #87fbea);
+  border-radius: 20px;
+}
+.card-header h2 {
+  font-size: 30px;
+  font-weight: 10px;
+  color: #1e40af;
+  margin-bottom: 10px;
+  text-align: center;
+  border-bottom: 2px solid #1e40af;
+  text-transform: uppercase;
+}
+.card-header p {
+  font-size: 16px;
+  text-align: center;
+  font-weight: 12px;
+  color: #1e40af;
+  margin-bottom: 10px;
+  text-transform: uppercase;
 }
 
 /* TITULO */
@@ -942,7 +1320,7 @@ textarea:focus {
   text-align: center;
   padding: 20px;
   background: linear-gradient(to right, #dbeafe, #bfdbfe);
-  border-radius: 50px;
+  border-radius: 20px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   margin: 20px;
 }
@@ -985,7 +1363,7 @@ textarea:focus {
   color: white;
   border: none;
   padding: 8px 16px;
-  border-radius: 0.375rem;
+  border-radius: 10px;
   font-weight: 500;
   cursor: pointer;
   transition: background-color 0.3s;
@@ -995,15 +1373,6 @@ textarea:focus {
 /* INFO MEDICA */
 .card-medical {
   border-left-color: #e90e0e;
-}
-.card-medical div h2 {
-  font-size: 30px;
-  font-weight: 10px;
-  color: #1e40af;
-  margin-bottom: 10px;
-  text-align: center;
-  border-bottom: 2px solid #1e40af;
-  text-transform: uppercase;
 }
 .card-medical article {
   padding: 0px 20px;
@@ -1107,14 +1476,14 @@ textarea:focus {
 .treatment-date {
   display: flex;
   align-items: center;
-  font-size: 0.875rem;
+  font-size: 14px;
   color: #2563eb;
 }
 
 .Estado {
   padding: 0.25rem 0.75rem;
-  border-radius: 9999px;
-  font-size: 0.75rem;
+  border-radius: 60px;
+  font-size: 12px;
   font-weight: 500;
   color: white;
   border: none;
@@ -1131,6 +1500,72 @@ textarea:focus {
 
 .estado-completo {
   background: linear-gradient(to right, #4ade80, #10b981);
+}
+
+@media (max-width: 480px) {
+  .main-perfil {
+    padding: 8px 4px;
+  }
+  .card-title {
+    padding: 10px;
+    margin-bottom: 5px;
+  }
+  .card-title h1 {
+    font-size: 30px;
+    text-align: center;
+    margin: 0;
+  }
+  .card-header {
+    padding: 12px;
+  }
+  .card-patient {
+    padding: 6px;
+  }
+  .card-patient article {
+    padding: 6px;
+    margin: 0px;
+  }
+  .card-patient article img {
+    width: 100px;
+    height: 100px;
+  }
+  .card-patient article h1 {
+    font-size: 16px;
+  }
+  .card-patient article div span {
+    font-size: 12px;
+  }
+  .card-patient button {
+    padding: 6px 8px;
+    margin: 10px;
+    font-size: 10px;
+  }
+  .card-medical {
+    padding: 4px;
+  }
+  .card-medical div h2 {
+    font-size: 14px;
+  }
+  .card-medical article {
+    margin: 4px;
+    padding: 2px;
+  }
+  .card-medical article div {
+    font-size: 8px;
+    margin-bottom: 0;
+    padding: 4px;
+  }
+  .card-medical article h3 {
+    font-size: 16px;
+    margin-bottom: 4px;
+  }
+  .card-medical article label {
+    font-size: 10px;
+  }
+  .card-medical article input {
+    height: 8px;
+    width: 8px;
+  }
 }
 
 /*# sourceMappingURL=stylessass.css.map */

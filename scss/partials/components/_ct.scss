@@ -144,7 +144,7 @@
 
 /* sección de facturación */
 .ct-billing-section {
-    
+
     h3 {
         font-size: 24px;
         margin-top: 10px;
@@ -157,4 +157,72 @@
         color: #334155;
         line-height: 1.6;
     }
+}
+
+// RESPONSIVE
+
+@media(max-width: 480px) {
+
+    .ct-main {
+        padding: 10px 5px;
+
+
+        section {
+            margin: 0;
+            padding: 10px;
+            gap: 10px;
+        }
+
+        h1,
+        h2 {
+            font-size: 20px;
+            font-weight: 600;
+        }
+    }
+
+    .ct-info-section {
+        flex-direction: column;
+
+        p,
+        ul {
+            font-size: 12px;
+        }
+    }
+
+    .ct-map {
+        width: 300px;
+        margin: 12px;
+    }
+
+
+    .ct-about-section {
+        img {
+            margin: 0;
+            width: 100%;
+            height: auto;
+        }
+
+        h3 {
+            font-size: 18px;
+        }
+
+        li,
+        p {
+            font-size: 12px;
+        }
+    }
+
+
+    .ct-billing-section {
+        
+        h3 {
+            font-size: 18px;
+        }
+
+        p {
+            font-size: 12px;
+        }
+    }
+
+
 }

@@ -1,5 +1,4 @@
-
-.home-main {
+.vcp-main {
     max-width: 90%;
     background-color: #c4ebfa;
     margin: 0 auto;
@@ -23,12 +22,14 @@
         font-size: 46px;
         color: #20c997;
         margin: 5px;
+        font-weight: 700;
     }
 
     p {
         font-size: 24px;
         color: #0a095a;
-        margin: 5px;
+        margin: 5px 0 8px 0;
+        font-weight: 700;
     }
 }
 
@@ -141,6 +142,7 @@
         font-size: 24px;
         color: #20c997;
         margin-bottom: 10px;
+        list-style: none;
 
 
         &:hover {
@@ -176,4 +178,131 @@
         color: #555;
         margin-bottom: 20px;
     }
+}
+
+// RESPONSIVE
+
+@media(max-width: 480px) {
+
+    .vcp-main{
+        padding: 10px;
+    }
+
+    .vcp-main-header {
+
+
+        h1 {
+            font-size: 30px;
+        }
+
+        p {
+            font-size: 16px;
+        }
+    }
+
+    .vcp-maps {
+        gap: 0;
+        align-items: center;
+        height: 300px;
+        width: auto;
+    }
+
+    .vcp-info {
+
+
+        h2 {
+            font-size: 18px;
+            margin-bottom: 5px;
+        }
+
+        p {
+            font-size: 12px;
+            margin-bottom: 5px;
+        }
+
+        li {
+            font-size: 10px;
+            margin-bottom: 5px;
+        }
+    }
+
+    .vcp-icono {
+        width: 100%;
+        padding: 5px;
+        gap: 10px;
+
+        img {
+            width: 80px;
+            height: 80px;
+        }
+
+        h1 {
+            font-size: 20px;
+            margin: 0;
+        }
+    }
+
+    .vcp-banner-img {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .vcp-servicios-header {
+        padding: 5px;
+
+        h1 {
+            font-size: 24px;
+            margin-bottom: 5px;
+        }
+
+        p {
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+    }
+
+    .vcp-servicios-img {
+        width: 100%;
+    }
+
+    .vcp-servicios {
+        width: 100%;
+        padding: 10px;
+
+        ul {
+            padding: 0;
+        }
+
+        li {
+            font-size: 16px;
+
+            p {
+                font-size: 12px;
+            }
+        }
+    }
+
+    .vcp-comodidades-financiamiento {
+        width: 95%;
+        padding: 10px;
+        margin: 5px;
+
+        h1 {
+            font-size: 20px;
+        }
+
+        p {
+            font-size: 12px;
+            margin-bottom: 10px;
+        }
+
+        ul {
+            margin-bottom: 10px;
+        }
+
+        li {
+            font-size: 10px;
+        }
+    }
+
 }

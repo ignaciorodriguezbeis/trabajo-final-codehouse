@@ -1,6 +1,5 @@
-
 .home-main {
-    max-width: 90%;
+    max-width: 92%;
     background-color: #c4ebfa;
     margin: 0 auto;
     padding: 20px;
@@ -211,4 +210,92 @@
             list-style: none;
         }
     }
+}
+
+
+// RESPONSIVE
+
+@media(max-width: 480px) {
+
+    .home-main {
+        display: block;
+        flex-direction: column;
+        max-width: 100%;
+    }
+
+    .home-header {
+        height: 200px;
+
+        img {
+            height: 50px;
+            width: 50px;
+            top: auto;
+            left: auto;
+        }
+
+        div {
+            width: 90%;
+            height: 150px;
+            top: 0;
+            left: auto;
+            padding-left: 30px;
+
+            h1 {
+                font-size: 24px;
+                padding: 5px 10px;
+            }
+
+            p {
+                font-size: 16px;
+                padding: 5px 10px;
+            }
+        }
+    }
+
+
+    .home-tratamientos {
+        padding: 5px;
+        max-width: 100%;
+        flex-direction: column;
+
+        h2 {
+            font-size: 22px;
+            padding: 5px 10px;
+            margin-bottom: 0;
+            text-shadow: none;
+        }
+
+        article {
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: repeat(4, 1fr);
+
+            h3 {
+                font-size: 12px;
+            }
+        }
+    }
+
+    .home-consultorios {
+        padding: 5px;
+
+        h2 {
+            font-size: 24px;
+            padding: 8px;
+            margin: auto;
+        }
+
+        div {
+            padding: 5px;
+
+            h3 {
+                font-size: 20px;
+            }
+
+            ul {
+                padding: 10px;
+                font-size: 16px;
+            }
+        }
+    }
+
 }

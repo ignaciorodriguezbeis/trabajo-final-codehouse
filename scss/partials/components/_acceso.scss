@@ -2,8 +2,8 @@
 
 .login-form-container {
     background: linear-gradient(145deg, #ffffff 0%, #f8fafc 100%);
-    padding: 2.5rem;
-    border-radius: 1rem;
+    padding: 40px;
+    border-radius: 20px;
     box-shadow: 0 10px 40px rgba(71, 85, 105, 0.1);
     border: 1px solid #e2e8f0;
     height: fit-content;
@@ -11,11 +11,11 @@
 
     h2 {
         color: #1e40af;
-        font-size: 1.5rem;
+        font-size: 24px;
         font-weight: 700;
-        margin-bottom: 2rem;
+        margin-bottom: 32px;
         border-bottom: 3px solid #dbeafe;
-        padding-bottom: 0.75rem;
+        padding-bottom: 12px;
     }
 
     label {
@@ -46,8 +46,8 @@
         background: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%);
         color: white;
         border: none;
-        padding: 1rem 2rem;
-        border-radius: 0.5rem;
+        padding: 16px 32px;
+        border-radius: 10px;
         font-weight: 600;
         cursor: pointer;
         transition: all 0.3s ease;
@@ -96,7 +96,7 @@
     border: 1px solid #bfdbfe;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 1.5rem;
+    gap: 24px;
 
     label {
         font-weight: 600;
@@ -107,7 +107,7 @@
     }
 
     input {
-        padding: 1rem;
+        padding: 16px;
         border: 2px solid #e2e8f0;
         border-radius: 10px;
         font-size: 16px;
@@ -207,9 +207,8 @@
         color: #78350f;
         font-size: 20px;
         font-weight: 600;
-        margin-bottom: 16px;
+        margin: 16px 0;
         text-transform: uppercase;
-        margin-top: 10px;
     }
 
     label {
@@ -299,4 +298,138 @@ select:focus,
 textarea:focus {
     outline: 2px solid #3b82f6;
     outline-offset: 2px;
+}
+
+// RESPONSIVE
+
+@media(max-width: 480px) {
+
+    .login-form-container {
+        padding: 10px 30px;
+        height: auto;
+        width: 100%;
+        flex-direction: column;
+
+
+        h2 {
+            font-size: 18px;
+            margin-bottom: 10px;
+            padding-bottom: 6px;
+        }
+
+        label {
+            font-size: 18px;
+            margin-left: 10px;
+        }
+
+        input {
+            padding: 5px;
+        }
+
+
+        button {
+            font-size: 12px;
+            margin: 5px auto;
+            padding: 12px 10px;
+            width: 100px;
+
+        }
+    }
+
+    .register-container {
+        padding: 8px;
+
+        h1 {
+            font-size: 24px;
+            margin-bottom: 14px;
+            padding-bottom: 6px;
+        }
+
+        form {
+            gap: 12px;
+        }
+    }
+
+    .registration-login {
+        gap: 10px;
+        padding: 10px;
+
+        label{
+            font-size: 14px;
+        }
+
+        input{
+            font-size: 14px;
+            padding: 8px;
+        }
+    }
+
+    .personal-data {
+
+        h3{
+            font-size: 20px;
+            padding-bottom: 5px;
+            margin-bottom: 5px;
+        }
+
+        div{
+            gap: 6px;
+            margin: 4px 6px;
+        }
+
+        label{
+            font-size: 14px;
+        }
+
+        input{
+            font-size: 12px;
+            width: 100%;
+        
+        }
+
+        select{
+            font-size: 12px;
+        }
+    }
+
+    .medical-history {
+        padding: 10px;
+
+        h3{
+            font-size: 20px;
+            padding-bottom: 5px;
+            margin-bottom: 5px;
+        }
+
+        h4{
+            font-size: 18px;
+            margin: 8px 0;
+        }
+
+        label{
+            font-size: 12px;
+        }
+    }
+
+    .extra-info {
+        flex-direction: column;
+        gap: 0;
+
+        label{
+            margin-bottom: 4px;
+            font-size: 16px;
+        }
+
+        textarea{
+            padding: 4px;
+            font-size: 12px;
+
+        }
+    }
+
+    .submit-button {
+        margin: 0 auto;
+        font-size: 12px;
+        padding: 8px 14px;
+    }
 }
