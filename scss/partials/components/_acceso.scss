@@ -1,4 +1,9 @@
+@use "../utilities/variables";
+@use "../utilities/mixins";
+
+
 /* INICIO */
+
 
 .login-form-container {
     background: linear-gradient(145deg, #ffffff 0%, #f8fafc 100%);
@@ -10,27 +15,23 @@
     text-align: center;
 
     h2 {
-        color: #1e40af;
-        font-size: 24px;
-        font-weight: 700;
+        @include mixins.font (24px, 700, #1e40af);
         margin-bottom: 32px;
         border-bottom: 3px solid #dbeafe;
         padding-bottom: 12px;
     }
 
     label {
-        font-weight: 600;
-        color: #374151;
-        margin-bottom: 0.5rem;
+        @include mixins.font (24px, 600, #374151);
+        margin-bottom: 8px;
         text-align: end;
-        font-size: 24px;
     }
 
     input {
-        padding: 1rem;
+        @include mixins.font (14px, 500, #374151);
+        padding: 8px;
         border: 2px solid #e2e8f0;
         border-radius: 0.5rem;
-        font-size: 0.95rem;
         transition: all 0.3s ease;
         background: #fafafa;
 
@@ -43,16 +44,14 @@
     }
 
     button {
+        @include mixins.font (20px, 600, white);
         background: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%);
-        color: white;
         border: none;
-        padding: 16px 32px;
+        padding: 10px 20px;
         border-radius: 10px;
-        font-weight: 600;
         cursor: pointer;
         transition: all 0.3s ease;
-        margin: 15px 600px;
-        font-size: 20px;
+        margin: 10px 300px;
 
         &:hover {
             transform: translateY(-2px);
@@ -71,9 +70,7 @@
     border: 1px solid #e2e8f0;
 
     h1 {
-        color: #1e40af;
-        font-size: 40px;
-        font-weight: 700;
+        @include mixins.font (40px, 700, #1e40af);
         margin-bottom: 20px;
         text-align: center;
         border-bottom: 3px solid #dbeafe;
@@ -99,18 +96,16 @@
     gap: 24px;
 
     label {
-        font-weight: 600;
-        color: #1e40af;
+        @include mixins.font (20px, 600, #1e40af);
         margin-bottom: 10px;
         text-align: end;
-        font-size: 20px;
     }
 
     input {
+        @include mixins.font (16px, 500, #979797);
         padding: 16px;
         border: 2px solid #e2e8f0;
         border-radius: 10px;
-        font-size: 16px;
         transition: all 0.3s ease;
         background: #fafafa;
 
@@ -134,9 +129,7 @@
     border: 1px solid #bbf7d0;
 
     h3 {
-        color: #166534;
-        font-size: 30px;
-        font-weight: 700;
+        @include mixins.font (30px, 700, #166534);
         margin-bottom: 10px;
         text-align: center;
         border-bottom: 2px solid #86efac;
@@ -152,11 +145,9 @@
     }
 
     label {
-        font-weight: 600;
-        color: #064e3b;
+        @include mixins.font (20px, 600, #064e3b);
         margin-bottom: 10px;
         text-align: end;
-        font-size: 20px;
     }
 
     input {
@@ -194,9 +185,7 @@
     border: 1px solid #fde68a;
 
     h3 {
-        color: #92400e;
-        font-size: 30px;
-        font-weight: 700;
+        @include mixins.font (30px, 700, #92400e);
         margin-bottom: 10px;
         text-align: center;
         border-bottom: 2px solid #fbbf24;
@@ -204,19 +193,15 @@
     }
 
     h4 {
-        color: #78350f;
-        font-size: 20px;
-        font-weight: 600;
+        @include mixins.font (20px, 600, #78350f);
         margin: 16px 0;
         text-transform: uppercase;
     }
 
     label {
-        font-weight: 600;
-        color: #535252;
+        @include mixins.font (18px, 600, #535252);
         margin-bottom: 10px;
         text-align: end;
-        font-size: 18px;
         margin: 5px 5px;
     }
 }
@@ -230,11 +215,9 @@
     align-items: center;
 
     label {
-        font-weight: 600;
-        color: #78350f;
+        @include mixins.font (20px, 600, #78350f);
         margin-bottom: 10px;
         text-align: end;
-        font-size: 20px;
     }
 
     textarea {
@@ -252,13 +235,11 @@
 /* BOTON DE ENVÍO */
 
 .submit-button {
+    @include mixins.font (18px, 700, white);
     background: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%);
-    color: white;
     border: none;
     padding: 12px 24px;
     border-radius: 10px;
-    font-size: 18px;
-    font-weight: 700;
     cursor: pointer;
     transition: all 0.3s ease;
     margin: 20px auto;
@@ -354,11 +335,11 @@ textarea:focus {
         gap: 10px;
         padding: 10px;
 
-        label{
+        label {
             font-size: 14px;
         }
 
-        input{
+        input {
             font-size: 14px;
             padding: 8px;
         }
@@ -366,28 +347,28 @@ textarea:focus {
 
     .personal-data {
 
-        h3{
+        h3 {
             font-size: 20px;
             padding-bottom: 5px;
             margin-bottom: 5px;
         }
 
-        div{
+        div {
             gap: 6px;
             margin: 4px 6px;
         }
 
-        label{
+        label {
             font-size: 14px;
         }
 
-        input{
+        input {
             font-size: 12px;
             width: 100%;
-        
+
         }
 
-        select{
+        select {
             font-size: 12px;
         }
     }
@@ -395,18 +376,18 @@ textarea:focus {
     .medical-history {
         padding: 10px;
 
-        h3{
+        h3 {
             font-size: 20px;
             padding-bottom: 5px;
             margin-bottom: 5px;
         }
 
-        h4{
+        h4 {
             font-size: 18px;
             margin: 8px 0;
         }
 
-        label{
+        label {
             font-size: 12px;
         }
     }
@@ -415,12 +396,12 @@ textarea:focus {
         flex-direction: column;
         gap: 0;
 
-        label{
+        label {
             margin-bottom: 4px;
             font-size: 16px;
         }
 
-        textarea{
+        textarea {
             padding: 4px;
             font-size: 12px;
 

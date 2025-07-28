@@ -1,0 +1,25 @@
+// @use "../utilities/mixins";
+
+
+@mixin flex ($direction, $justify, $align) {
+    display: flex;
+    flex-direction: $direction ;
+    justify-content: $justify;
+    align-items: $align;
+}
+//  @include mixins.flex (,,);
+
+@mixin font ($size, $weight, $color) {
+    font-size: $size ;
+    font-weight: $weight ;
+    color: $color ;
+}
+//  @include mixins.font (,,);
+
+@mixin img () {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+}
+// @include mixins.img (,,);

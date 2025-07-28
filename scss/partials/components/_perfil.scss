@@ -1,3 +1,6 @@
+@use "../utilities/variables";
+@use "../utilities/mixins";
+
 /* BLOQUES */
 
 .main-perfil {
@@ -20,9 +23,7 @@
     border-radius: 20px;
 
     h2 {
-        font-size: 30px;
-        font-weight: 10px;
-        color: #1e40af;
+        @include mixins.font (30px, 600, #1e40af);
         margin-bottom: 10px;
         text-align: center;
         border-bottom: 2px solid #1e40af;
@@ -30,10 +31,8 @@
     }
 
     p {
-        font-size: 16px;
+        @include mixins.font (16px, 600, #1e40af);
         text-align: center;
-        font-weight: 12px;
-        color: #1e40af;
         margin-bottom: 10px;
         text-transform: uppercase;
     }
@@ -43,15 +42,13 @@
 
 .card-title {
     padding: 20px;
-    background: linear-gradient(to right, #06b6d4, #14b8a6);
+    background: linear-gradient(to right, variables.$baner-blue, variables.$baner-green);
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
 
     h1 {
-        font-size: 40px;
-        font-weight: 700;
-        color: #ffffff;
+        @include mixins.font (40px, 700, #ffffff);
         text-transform: uppercase;
     }
 }
@@ -59,15 +56,13 @@
 /* INFO PACIENTE */
 
 .card-patient {
-    border-left-color: #c4b168;
+    border-left-color: orange;
 
     article {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        @include mixins.flex (column, center, center);
         text-align: center;
         padding: 20px;
-        background: linear-gradient(to right, #dbeafe, #bfdbfe);
+        background: radial-gradient(#dbeafe, #b4d4fc);
         border-radius: 20px;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         margin: 20px;
@@ -82,23 +77,18 @@
         }
 
         h1 {
-            font-size: 32px;
-            font-weight: bold;
-            color: #111827;
+            @include mixins.font (32px, bold, #5e6063);
             margin-top: 16px;
             text-transform: uppercase;
         }
 
         p {
-            color: #64748b;
-            font-weight: 500;
+            @include mixins.font (16px, 500, #64748b);
         }
 
         div {
+            @include mixins.flex (row, space-between, center);
             padding: 5px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
             margin: 5px 0;
             border-bottom: 1px solid #252525;
             width: 100%;
@@ -106,19 +96,17 @@
             margin: 5px auto;
 
             span {
-                color: #282829;
-                font-size: 24px;
+                @include mixins.font (24px, 500, #282829);
             }
         }
     }
 
     button {
+        @include mixins.font (16px, 500, white);
         background: linear-gradient(to right, #3b82f6, #60a5fa);
-        color: white;
         border: none;
         padding: 8px 16px;
         border-radius: 10px;
-        font-weight: 500;
         cursor: pointer;
         transition: background-color 0.3s;
         margin: 20px;
@@ -132,42 +120,37 @@
 
     article {
         padding: 0px 20px;
-        background: linear-gradient(to right, #e0f2fe, #bfdbfe);
+        background: radial-gradient(#dbeafe, #b4d4fc);
         border-radius: 20px;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         margin: 10px;
 
         div {
-            font-size: 16px;
-            color: #374151;
+            @include mixins.font (16px, 500, #374151);
             margin-bottom: 5px;
             align-items: center;
             padding: 5px;
         }
 
         h3 {
-            font-size: 24px;
-            font-weight: 600;
-            color: #1e40af;
+            @include mixins.font (24px, 600, #1e40af);
             margin-bottom: 10px;
             text-align: center;
             border-bottom: 2px solid #000000;
         }
 
         label {
-            font-weight: 500;
-            color: #374151;
+            @include mixins.font (20px, 500, #374151);
             margin-bottom: 5px;
             text-align: end;
-            font-size: 20px;
 
         }
 
         input {
+            @include mixins.font (16px, 400, #686868);
             padding: 10px;
             border: 2px solid #e2e8f0;
             border-radius: 10px;
-            font-size: 16px;
             transition: all 0.3s ease;
             background: #fafafa;
         }
@@ -207,15 +190,12 @@
 }
 
 .treatment-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
+    @include mixins.flex (row, space-between, flex-start);
     margin-bottom: 0.5rem;
 }
 
 .treatment-title {
-    font-weight: 600;
-    color: #1e40af;
+    @include mixins.font (28px, 600, #1e40af);
 }
 
 .treatment-title .history {
@@ -240,16 +220,13 @@
 .treatment-date {
     display: flex;
     align-items: center;
-    font-size: 14px;
-    color: #2563eb;
+    @include mixins.font (14px, 500, #2563eb);
 }
 
 .Estado {
+    @include mixins.font (12px, 500, white);
     padding: 0.25rem 0.75rem;
     border-radius: 60px;
-    font-size: 12px;
-    font-weight: 500;
-    color: white;
     border: none;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }

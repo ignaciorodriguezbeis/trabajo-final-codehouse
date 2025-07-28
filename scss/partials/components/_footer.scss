@@ -1,3 +1,6 @@
+@use "../utilities/mixins";
+@use "../utilities/variables";
+
 footer {
     background: linear-gradient(to right, #334155, #1e293b);
     color: white;
@@ -19,14 +22,13 @@ footer {
 }
 
 .footer-contacts {
-    display: flex;
-    justify-content: center;
+    @include mixins.flex (row, center, center);
     align-items: center;
     gap: 20px;
     font-size: 20px;
 
     a {
-        color: #67e8f9;
+        color:variables.$baner-blue;
         text-decoration: none;
 
 
@@ -37,9 +39,7 @@ footer {
 }
 
 .footer-social {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include mixins.flex (row, center, center);
     gap: 70px;
     margin: 8px;
 
@@ -50,10 +50,10 @@ footer {
 }
 
 .footer-copyright {
+  @include mixins.font (14px, 400, #9ca3af);
+
     padding-top: 0.5rem;
     border-top: 1px solid #475569;
-    font-size: 14px;
-    color: #9ca3af;
     text-align: center;
 
     &:hover {
