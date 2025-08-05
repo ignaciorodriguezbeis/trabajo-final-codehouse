@@ -2,6 +2,7 @@
 @use "../utilities/mixins";
 
 
+
 .vcp-main {
     max-width: 90%;
     background-color: variables.$fondo-consultorios;
@@ -11,9 +12,7 @@
 }
 
 .vcp-main-header {
-    background: url('/assets/tu-imagen-de-fondo.jpg') no-repeat center center;
     @include mixins.flex (column, center, center);
-    background-size: cover;
     padding: 20px;
     height: 80px;
     text-align: center;

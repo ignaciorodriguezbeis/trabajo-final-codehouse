@@ -197,7 +197,7 @@ footer section article {
 }
 
 .home-header {
-  background-image: url("/assets/tipos-de-sonrisa-1.jpg");
+  background-image: url("../assets/tipos-de-sonrisa-1.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -293,7 +293,7 @@ footer section article {
 
 /* Imágenes de fondo para los tratamientos*/
 .Odontología-general {
-  background-image: url("/assets/sonrisa-dientes-sanos-perfectos-mujer-joven_168410-402.jpg");
+  background-image: url("../assets/sonrisa-dientes-sanos-perfectos-mujer-joven_168410-402.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -301,7 +301,7 @@ footer section article {
 }
 
 .Implantologia {
-  background-image: url("/assets/implantes-dentales.jpg");
+  background-image: url("../assets/implantes-dentales.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -309,7 +309,7 @@ footer section article {
 }
 
 .Endodoncia {
-  background-image: url("/assets/render-tratamiento-endodoncia.webp");
+  background-image: url("../assets/render-tratamiento-endodoncia.webp");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -317,7 +317,7 @@ footer section article {
 }
 
 .Estética-dental {
-  background-image: url("/assets/estetica-dental.jpg");
+  background-image: url("../assets/estetica-dental.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -325,7 +325,7 @@ footer section article {
 }
 
 .Ortodoncia {
-  background-image: url("/assets/ortodoncia-clinica-dental.jpeg");
+  background-image: url("../assets/ortodoncia-clinica-dental.jpeg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -333,7 +333,7 @@ footer section article {
 }
 
 .protesis {
-  background-image: url("/assets/diferentes-tipos-de-protesis-dental.jpg");
+  background-image: url("../assets/diferentes-tipos-de-protesis-dental.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -341,7 +341,7 @@ footer section article {
 }
 
 .Periodoncia {
-  background-image: url("/assets/periodoncia-dental.jpg");
+  background-image: url("../assets/periodoncia-dental.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -349,7 +349,7 @@ footer section article {
 }
 
 .Radiografía {
-  background-image: url("/assets/radiografia-dental.jpg");
+  background-image: url("../assets/radiografia-dental.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -671,12 +671,10 @@ footer section article {
 }
 
 .vcp-main-header {
-  background: url("/assets/tu-imagen-de-fondo.jpg") no-repeat center center;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-size: cover;
   padding: 20px;
   height: 80px;
   text-align: center;

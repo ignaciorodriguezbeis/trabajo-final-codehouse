@@ -10,7 +10,7 @@
 }
 
 .home-header {
-    background-image: url('/assets/tipos-de-sonrisa-1.jpg');
+    background-image: url('../assets/tipos-de-sonrisa-1.jpg');
     @include mixins.img();
     padding: 60px 20px;
     text-align: center;
@@ -105,42 +105,42 @@
 
 /* Imágenes de fondo para los tratamientos*/
 .Odontología-general {
-    background-image: url('/assets/sonrisa-dientes-sanos-perfectos-mujer-joven_168410-402.jpg');
+    background-image: url('../assets/sonrisa-dientes-sanos-perfectos-mujer-joven_168410-402.jpg');
     @include mixins.img();
 }
 
 .Implantologia {
-    background-image: url('/assets/implantes-dentales.jpg');
+    background-image: url('../assets/implantes-dentales.jpg');
     @include mixins.img();
 }
 
 .Endodoncia {
-    background-image: url('/assets/render-tratamiento-endodoncia.webp');
+    background-image: url('../assets/render-tratamiento-endodoncia.webp');
     @include mixins.img();
 }
 
 .Estética-dental {
-    background-image: url('/assets/estetica-dental.jpg');
+    background-image: url('../assets/estetica-dental.jpg');
     @include mixins.img();
 }
 
 .Ortodoncia {
-    background-image: url('/assets/ortodoncia-clinica-dental.jpeg');
+    background-image: url('../assets/ortodoncia-clinica-dental.jpeg');
     @include mixins.img();
 }
 
 .protesis {
-    background-image: url('/assets/diferentes-tipos-de-protesis-dental.jpg');
+    background-image: url('../assets/diferentes-tipos-de-protesis-dental.jpg');
     @include mixins.img();
 }
 
 .Periodoncia {
-    background-image: url('/assets/periodoncia-dental.jpg');
+    background-image: url('../assets/periodoncia-dental.jpg');
     @include mixins.img();
 }
 
 .Radiografía {
-    background-image: url('/assets/radiografia-dental.jpg');
+    background-image: url('../assets/radiografia-dental.jpg');
     @include mixins.img();
 }
 

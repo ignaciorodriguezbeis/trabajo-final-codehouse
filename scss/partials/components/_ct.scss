@@ -96,7 +96,9 @@
     }
 }
 
+
 /* descripcion y equipo */
+
 .ct-about-section {
     h2 {
         @include mixins.font (40px, 700, variables.$baner-blue);
@@ -147,7 +149,9 @@
     }
 }
 
+
 /* sección de facturación */
+
 .ct-billing-section {
 
     h3 {@include mixins.font (24px, 500, variables.$baner-blue);
@@ -166,6 +170,7 @@
         line-height: 1.6;
     }
 }
+
 
 // RESPONSIVE
 
@@ -202,7 +207,6 @@
         margin: 12px;
     }
 
-
     .ct-about-section {
         img {
             margin: 0;
@@ -231,6 +235,4 @@
             font-size: 12px;
         }
     }
-
-
 }
