@@ -4,117 +4,81 @@
 
 
 header {
-    background: linear-gradient(to right, variables.$baner-blue, variables.$baner-green);
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 
-    section {
-        margin: 5px auto;
-        padding: 5px 5px;
-        @include mixins.flex(row, center, center);
+    nav {
+        background: linear-gradient(to right, variables.$baner-blue, variables.$baner-green);
 
-
-        article {
-            display: flex;
-            align-items: center;
-
-            img {
-                height: 80px;
-                width: 80px;
-                border-radius: 50%;
-                margin-right: 30px;
-                margin-left: 15px;
-            }
-
-            span {
-
-                @include mixins.font (35px, 700, white);
-
-            }
-        }
-
-        nav {
-            display: flex;
-            align-items: center;
-            gap: 30px;
+        div {
 
             a {
-                @include mixins.font (22px, 500, white);
-                text-decoration: none;
-                padding: 10px 15px;
-            }
-        }
+                @include mixins.flex (row, center, center);
 
-        button {
-            @include mixins.font (18px, 500, white);
-            background: variables.$baner-blue;   
-            border: none;
-            padding: 10px 20px;
-            border-radius: 10px;
-            cursor: pointer;
-            transition: background-color 0.5s;
+                img {
+                    border-radius: 50%;
+                    height: 70px;
+                    width: 70px;
+                    align-items: center
+                }
 
-            &:hover {
-                background: variables.$baner-green;
-                border: solid 2px variables.$baner-blue;
+                span {
+                    @include mixins.font(40px, 700, white);
+                    padding: 0px 20px;
+                    border-radius: 10px;
+                }
             }
         }
     }
 }
 
+
+.offcanvas-body {
+    background: linear-gradient(to right, variables.$baner-blue, variables.$baner-green);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+
+    ul {
+        list-style: none;
+        padding: 0;
+
+        li {
+            @include mixins.flex (row, center, center);
+
+            a {
+                color: white;
+                text-decoration: none;
+                font-size: 26px;
+
+
+                &:hover {
+                    color: variables.$title-hover;
+                    text-decoration: underline;
+                    cursor: pointer;
+                }
+
+                button {
+                    background-color: variables.$baner-green;
+                    color: white;
+                    border: none;
+                    padding: 10px 20px;
+                    border-radius: 5px;
+                    cursor: pointer;
+                    font-size: 20px;
+
+                    &:hover {
+                        background-color: variables.$title-hover;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.user-icon {
+    margin: 0 0 0 20px;
+
+}
 
 // RESPONSIVE
-
-@media(max-width: 480px) {
-
-    header {
-
-        section {
-
-            article {
-
-                a {
-                    span {
-                        font-size: 16px;
-                        padding: 8px 5px;
-                    }
-
-                    img {
-                        height: 40px;
-                        width: 40px;
-                        margin-right: 5px;
-                        margin-left: 0;
-                    }
-                }
-            }
-
-            nav {
-                gap: 10px;
-
-                a {
-                    font-size: 10px;
-                    padding: 5px;
-                }
-            }
-
-            div {
-
-                nav {
-                    gap: 5px;
-
-                    button {
-                        font-size: 10px;
-                        padding: 5px;
-                    }
-
-                    img {
-                        height: 30px;
-                        width: 30px;
-                        padding: 0;
-                        margin: 0;
-                    }
-                }
-            }
-        }
-    }
-}

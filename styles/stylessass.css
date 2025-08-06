@@ -11,98 +11,78 @@ body {
   font-family: "Noto Sans", sans-serif;
   background: linear-gradient(to bottom right, #f6f9fd, #e2e4e7);
   min-height: 100vh;
+  margin-top: 90px;
 }
 
 /* font-family: 'Noto Sans'; */
-header {
+header nav {
   background: linear-gradient(to right, #06b6d4, #14b8a6);
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
-header section {
-  margin: 5px auto;
-  padding: 5px 5px;
+header nav div a {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
 }
-header section article {
-  display: flex;
+header nav div a img {
+  border-radius: 50%;
+  height: 70px;
+  width: 70px;
   align-items: center;
 }
-header section article img {
-  height: 80px;
-  width: 80px;
-  border-radius: 50%;
-  margin-right: 30px;
-  margin-left: 15px;
-}
-header section article span {
-  font-size: 35px;
+header nav div a span {
+  font-size: 40px;
   font-weight: 700;
   color: white;
-}
-header section nav {
-  display: flex;
-  align-items: center;
-  gap: 30px;
-}
-header section nav a {
-  font-size: 22px;
-  font-weight: 500;
-  color: white;
-  text-decoration: none;
-  padding: 10px 15px;
-}
-header section button {
-  font-size: 18px;
-  font-weight: 500;
-  color: white;
-  background: #06b6d4;
-  border: none;
-  padding: 10px 20px;
+  padding: 0px 20px;
   border-radius: 10px;
-  cursor: pointer;
-  transition: background-color 0.5s;
-}
-header section button:hover {
-  background: #14b8a6;
-  border: solid 2px #06b6d4;
 }
 
-@media (max-width: 480px) {
-  header section article a span {
-    font-size: 16px;
-    padding: 8px 5px;
-  }
-  header section article a img {
-    height: 40px;
-    width: 40px;
-    margin-right: 5px;
-    margin-left: 0;
-  }
-  header section nav {
-    gap: 10px;
-  }
-  header section nav a {
-    font-size: 10px;
-    padding: 5px;
-  }
-  header section div nav {
-    gap: 5px;
-  }
-  header section div nav button {
-    font-size: 10px;
-    padding: 5px;
-  }
-  header section div nav img {
-    height: 30px;
-    width: 30px;
-    padding: 0;
-    margin: 0;
-  }
+.offcanvas-body {
+  background: linear-gradient(to right, #06b6d4, #14b8a6);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
 }
+.offcanvas-body ul {
+  list-style: none;
+  padding: 0;
+}
+.offcanvas-body ul li {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.offcanvas-body ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 26px;
+}
+.offcanvas-body ul li a:hover {
+  color: #0a095a;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.offcanvas-body ul li a button {
+  background-color: #14b8a6;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 20px;
+}
+.offcanvas-body ul li a button:hover {
+  background-color: #0a095a;
+}
+
+.user-icon {
+  margin: 0 0 0 20px;
+}
+
 footer {
   background: linear-gradient(to right, #334155, #1e293b);
   color: white;

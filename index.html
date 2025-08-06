@@ -17,32 +17,58 @@
 
 <body>
     <header>
-        <section class="container">
-            <article class="col-3">
-                <a href="#">
+
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <div class="container-fluid">
+
+                <a class="navbar-brand " href="#">
                     <img src="./assets/arbol-icono.jpg" alt="Vitalis" class="animate__animated animate__flip">
+                    <span>Vitalis</span>
                 </a>
-                <a href="#"><span>Vitalis</span></a>
 
-            </article>
-            <nav class="col-6">
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
 
-                <a href="#">Home</a>
+                    <span class="navbar-toggler-icon"></span>
 
-                <a href="./pages/CT.html">Colonia Tirolesa</a>
+                </button>
 
-                <a href="./pages/VCP.html">Villa Carlos Paz</a>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
 
-            </nav>
-            <div class="col-3">
-                <nav>
-                    <a href="./pages/acceso.html"><button>Acceder</button></a>
+                    <div class="offcanvas-body">
 
-                    <a href="./pages/perfil.html"><img src="./assets/usuario (1).png"></img></a>
-                </nav>
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+
+                            <li class="nav-item ">
+                                <a class="nav-link mx-lg-2 " aria-current="page" href="./index.html">Home</a>
+                            </li>
+
+                            <li class="nav-item ">
+                                <a class="nav-link mx-lg-2" href="./pages/CT.html">Colonia Tirolesa</a>
+                            </li>
+
+                            <li class="nav-item ">
+
+                                <a class="nav-link mx-lg-2" href="./pages/VCP.html">Villa Carlos Paz</a>
+                            </li>
+
+                            <li class="nav-item ">
+                                <a class="nav-link mx-lg-2" href="./pages/acceso.html"><button>Acceder</button></a>
+                            </li>
+
+                            <li class="nav-item ">
+                                <a class="nav-link mx-lg-2" href="./pages/perfil.html"><img
+                                        src="./assets/usuario (1).png"></img></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-        </section>
+        </nav>
+
     </header>
+
 
     <main class="home-main">
 
