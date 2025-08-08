@@ -250,6 +250,10 @@
 
 @media(max-width: 480px) {
 
+    h2 {
+        font-size: 24px;
+    }
+
     .main-perfil {
         padding: 8px 4px;
     }
@@ -271,6 +275,7 @@
 
     .card-patient {
         padding: 6px;
+        width: 100%;
 
         article {
             padding: 6px;
@@ -282,13 +287,13 @@
             }
 
             h1 {
-                font-size: 16px;
+                font-size: 26px;
             }
 
             div {
 
                 span {
-                    font-size: 12px;
+                    font-size: 14px;
                 }
             }
         }
@@ -302,12 +307,13 @@
 
     .card-medical {
         padding: 4px;
+        width: 100%;
 
 
         div {
 
             h2 {
-                font-size: 14px;
+                font-size: 24px;
             }
         }
 
@@ -318,26 +324,59 @@
             div {
                 font-size: 8px;
                 margin-bottom: 0;
-                padding: 4px;
+                padding: 10px;
             }
 
             h3 {
-                font-size: 16px;
+                font-size: 18px;
                 margin-bottom: 4px;
             }
 
             label {
-                font-size: 10px;
+                font-size: 14px;
             }
 
             input {
-                height: 8px;
-                width: 8px;
+                height: 12px;
+                width: 12px;
             }
         }
     }
 
+    .card-history,
+    .card-treatments {
+        padding: 4px;
+        width: 100%;
 
+        div{
+
+            h2 {
+                font-size: 24px;
+            }
+        }
+
+        .treatment-item {
+            padding: 8px;
+            margin: 4px;
+        }
+
+        .treatment-header {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .treatment-title {
+            font-size: 20px;
+        }
+
+        .treatment-description {
+            font-size: 12px;
+        }
+
+        .treatment-date {
+            font-size: 10px;
+        }
+    }
 
 
 }
