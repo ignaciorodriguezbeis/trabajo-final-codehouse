@@ -83,6 +83,43 @@ header nav div a span {
   margin: 0 0 0 auto;
 }
 
+@media (max-width: 768px) {
+  .offcanvas-body {
+    padding: 20px;
+  }
+  .offcanvas-body ul li a {
+    font-size: 20px;
+  }
+  .offcanvas-body button {
+    font-size: 18px;
+    padding: 8px 16px;
+  }
+  .user-icon {
+    margin: 10px 0 0 auto;
+  }
+  nav div a span {
+    font-size: 30px;
+  }
+}
+@media (max-width: 480px) {
+  .offcanvas-body {
+    padding: 10px 15px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  .offcanvas-body ul li a {
+    font-size: 28px;
+  }
+  .offcanvas-body button {
+    font-size: 26px;
+    padding: 6px 12px;
+    margin-right: 120px;
+  }
+  nav div a span {
+    font-size: 24px;
+  }
+}
 footer {
   background: linear-gradient(to right, #334155, #1e293b);
   color: white;
@@ -825,9 +862,10 @@ footer section article {
 @media (max-width: 480px) {
   .vcp-main {
     padding: 10px;
+    margin-top: 110px;
   }
   .vcp-main-header h1 {
-    font-size: 30px;
+    font-size: 22px;
   }
   .vcp-main-header p {
     font-size: 16px;
@@ -835,7 +873,7 @@ footer section article {
   .vcp-maps {
     gap: 0;
     align-items: center;
-    height: 300px;
+    height: auto;
     width: auto;
   }
   .vcp-info h2 {
